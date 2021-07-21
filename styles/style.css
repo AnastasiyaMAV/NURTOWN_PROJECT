@@ -1,21 +1,16 @@
-body {
-   max-width: 100%;
-}
-
 .header {
    display: grid;
    max-width: 100%;
-   max-height: 102px;
    grid-template-columns: 1fr 2fr;
    grid-template-rows: 1fr;
-   grid-template-areas: "logo nav";
-   padding: 15px;
+   grid-template-areas: "header__logo header__nav";
+   padding: 5vh;
 }
 
 .header__logo {
-   grid-area: logo;
+   grid-area: header__logo;
    display: grid;
-   max-width: 460px;
+   max-width: 100%;
    justify-content: center;
    align-items: center;
 }
@@ -26,35 +21,36 @@ a {
 }
 
 .header__nav {
-   grid-area: nav;
+   grid-area: header__nav;
    display: grid;
    font-size: 18px;
    grid-template-columns: repeat (5, 1fr);
    grid-template-rows: 1fr;
-   grid-template-areas: "boss gallery projects sertificates contacts";
+   grid-template-areas:
+      "header__boss header__gallery header__projects header__sertificates header__contacts";
    justify-content: start;
    align-items: center;
-   gap: 60px;
+   gap: 4vw;
 }
 
 .header__boss {
-   grid-area: boss;
+   grid-area: header__boss;
 }
 
 .header__gallery {
-   grid-area: gallery;
+   grid-area: header__gallery;
 }
 
 .header__projects {
-   grid-area: projects;
+   grid-area: header__projects;
 }
 
 .header__sertificates {
-   grid-area: sertificates;
+   grid-area: header__sertificates;
 }
 
 .header__contacts {
-   grid-area: contacts;
+   grid-area: header__contacts;
 }
 
 .introduction {
@@ -94,21 +90,20 @@ a {
    position: absolute;
    left: 1%;
    top: 93%;
-
 }
 
-.cou .our-projects {
-   /* margin: 30px 0px;*/
+.our-projects {
    display: grid;
    grid-area: our-projects;
-   justify-items: center;
-   /*border: 2px solid blueviolet;*/
+   margin: 10% auto;
+   border: 2px solid blueviolet;
 }
 
 .our-tasks {
    display: grid;
    grid-area: our-tasks;
    justify-items: center;
+   margin: 10% auto;
    /*border: 2px solid blueviolet;*/
 }
 
@@ -117,11 +112,6 @@ a {
    width: 90vw;
    grid-template-columns: 1fr 1fr;
    gap: 5%;
-}
-
-.our-tasks__title {
-   margin-bottom: 30px;
-   color: #C4C4C4;
 }
 
 .our-tasks__first {
@@ -136,7 +126,7 @@ a {
    font-size: 15px;
 }
 
-.our-projects__title {
+.our__title {
    margin-bottom: 30px;
    color: #C4C4C4;
 }
@@ -144,7 +134,7 @@ a {
 .our-projects__row {
    display: grid;
    width: 90vw;
-   grid-template-rows: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 10%;
    gap: 15px;
 }
 
@@ -175,14 +165,13 @@ a {
 
 .our-projects__btn {
    display: grid;
-   width: 90vw;
-   justify-content: right;
+   grid-template-columns: 1fr;
+   justify-items: right;
    margin-top: 10px;
 }
 
 .footer {
    display: grid;
-   margin: 10px auto;
    background-color: #2C2C2C;
    color: #FFFFFF;
 }
@@ -197,7 +186,6 @@ a.link {
    grid-template-columns: 1fr 1fr 1.5fr 1fr;
    grid-template-rows: 1fr;
    grid-template-areas: "footer__logo footer__information  footer__contacts footer__social";
-
 }
 
 .footer__logo {
@@ -278,9 +266,10 @@ a.link {
    grid-area: footer__social;
    display: grid;
    grid-template-columns: 1fr;
-   grid-template-rows: 0.5fr 1fr;
-   grid-template-areas: "title3"
-      "wrapper";
+   grid-template-rows: 10% 1fr;
+   grid-template-areas:
+      "title3"
+      "footer__social-wrapper";
    justify-content: start;
 }
 
@@ -289,43 +278,40 @@ a.link {
 }
 
 .footer__social-wrapper {
-   grid-area: wrapper;
+   grid-area: footer__social-wrapper;
    display: grid;
    max-width: 195px;
    grid-template-columns: repeat (4, 1fr);
    grid-template-rows: 1fr;
-   grid-template-areas: "facebook twitter linked pinterest";
+   grid-template-areas:
+      "footer__facebook footer__twitter footer__linked footer__pinterest";
 }
 
-.facebook {
-   grid-area: facebook;
+.footer__facebook {
+   grid-area: footer__facebook;
 }
 
-.twitter {
-   grid-area: twitter;
+.footer__twitter {
+   grid-area: footer__twitter;
 }
 
-.linked {
-   grid-area: linked;
+.footer__linked {
+   grid-area: footer__linked;
 }
 
-.pinterest {
-   grid-area: pinterest;
+.footer__pinterest {
+   grid-area: footer__pinterest;
 }
 
-/*не отображается линия, хотя должна*/
-.footer__hr {
-   border: none;
-   background-color: #ece2e2;
-   height: 4px;
+.footer__line {
+   max-width: 100%;
 }
 
 .footer__bottom {
    display: grid;
-   font-size: 16px;
-   color: #414141;
    justify-content: center;
    align-items: center;
-   padding: 20px;
-
+   font-size: 16px;
+   color: #414141;
+   padding: 2%;
 }

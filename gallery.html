@@ -11,73 +11,98 @@
     <title>NURTOWN</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/png">
-
-    <link rel="stylesheet" href="styles/style.css">
-
-    <style>
-        .gallery__list {
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                grid-template-rows: repeat(2, 1fr);
-                align-items: flex-start;
-                grid-gap: 15px;
-                margin: auto;
-}
+    <link rel="stylesheet" href="styles/style_gallery.css">
     
-        .gallery__text {
-            border: seagreen solid;
-            background-color: rgba(251, 251, 251, 1);
-        }
-        .gallery__img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block; 
-}
-
-    </style>
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__logo"><img src="images/logo.png" alt="logo"></div>
+        <div class="header__nav">
+            <div class="header__boss"><a href="index.html"><hr>ГЛАВНАЯ<hr></a></div>
+            <div class="header__gallery"><a href="gallery.html">ГАЛЕРЕЯ</a></div>
+            <div class="header__projects"><a href="#">ПРОЕКТЫ</a></div>
+            <div class="header__sertificates"><a href="#">СЕРТИФИКАТЫ</a></div>
+            <div class="header__contacts"><a href="#">КОНТАКТЫ</a></div>
+        </div>
+    </header>
+
     <article class="gallery">
         <div class="gallery__title">
             <h1>ГАЛЕРЕЯ ФОТОГРАФИЙ</h1>
         </div>
         <section class="gallery__list">
             <div class="gallery__item gallery__item--1">
-                <img src="images/gallery1.png" class="gallery__img" alt="Image 1">
+                <img src="images/gallery/gallery1.png" class="gallery__img" alt="Image 1">
                 <p class="gallery__text">Описание или пояснение к изображению </p>
             </div>
             <div class="gallery__item gallery__item--2">
-                <img src="images/gallery2.png" class="gallery__img" alt="Image 2">
+                <img src="images/gallery/gallery2.png" class="gallery__img" alt="Image 2">
             </div>
             <div class="gallery__item gallery__item--3">
-                <img src="images/gallery3.png" class="gallery__img" alt="Image 3">
+                <img src="images/gallery/gallery3.png" class="gallery__img" alt="Image 3">
             </div>
             <div class="gallery__item gallery__item--4">
-                <img src="images/gallery4.png" class="gallery__img" alt="Image 4">
+                <img src="images/gallery/gallery4.png" class="gallery__img" alt="Image 4">
             </div>
             <div class="gallery__item gallery__item--5">
-                <img src="images/gallery5.png" class="gallery__img" alt="Image 5">
+                <img src="images/gallery/gallery5.png" class="gallery__img" alt="Image 5">
             </div>
             <div class="gallery__item gallery__item--6">
-                <img src="images/gallery6.png" class="gallery__img" alt="Image 6">
+                <img src="images/gallery/gallery6.png" class="gallery__img" alt="Image 6">
             </div>
             <div class="gallery__item gallery__item--7">
-                <img src="images/gallery7.png" class="gallery__img" alt="Image 6">
+                <img src="images/gallery/gallery7.png" class="gallery__img" alt="Image 6">
             </div>
             <div class="gallery__item gallery__item--8">
-                <img src="images/gallery8.png" class="gallery__img" alt="Image 6">
+                <img src="images/gallery/gallery8.png" class="gallery__img" alt="Image 6">
             </div>
             <div class="gallery__item gallery__item--9">
-                <img src="images/gallery9.png" class="gallery__img" alt="Image 6">
+                <img src="images/gallery/gallery9.png" class="gallery__img" alt="Image 6">
             </div>
             <div class="gallery__item gallery__item--10">
-                <img src="images/gallery10.png" class="gallery__img" alt="Image 6">
+                <img src="images/gallery/gallery10.png" class="gallery__img" alt="Image 6">
             </div>
         </section>
     </article>
 
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__logo"><img src="images/logo-footer.png" alt="logo-footer"></div>
+            <div class="footer__information">
+                <a href="#" class="title1 link">Информация</a>
+                <a href="index.html" class="footer__boss link">Главная</a>
+                <a href="gallery.html" class="footer__gallery link">Галерея</a>
+                <a href="#" class="footer__projects link">Проекты</a>
+                <a href="#" class="footer__sertificates link">Сертификаты</a>
+                <a href="#" class="footer__contact link">Контакты</a>
+            </div>
+            <div class="footer__contacts">
+                <span class="title2">Контакты</span>
+                <div class="footer__location"><img src="images/geoloc.png" alt="geoloc">
+                    <p>&nbsp;&nbsp;100000, Республика Казахстан, г. Караганда, ул. Телевизионная 10</p>
+                </div>
+                <div class="footer__phone"><img src="images/phone.png" alt="phone">
+                    <span>&nbsp;&nbsp;+7 (701) 77 76 811</span></div>
+                <div class="footer__mail"><img src="images/mail.png"
+                    alt="mail"><span>&nbsp;&nbsp;Galym.sultanov@mail.ru</span></div>
+            </div>
+            <div class="footer__social">
+                <div><span class="title3">Социальные сети</span></div>
+                <div class="footer__social-wrapper">
+                    <a href="#" class="footer__facebook"><img src="images/facebook.png" alt="facebook"></a>
+                    <a href="#" class="footer__twitter"><img src="images/twitter.png" alt="twitter"></a>
+                    <a href="#" class="footer__linked"><img src="images/linked.png" alt="linked"></a>
+                    <a href="#" class="footer__pinterest"><img src="images/pinterest.png" alt="pinterest"></a>
+                </div>
+            </div>
+        </div>
+
+        <img class="footer__line" src="images/line.png" alt="line">
+        <div class="footer__bottom">
+            <span class="footer__copyright">&copy;&nbsp;2019 Digital Project. Все права защищены.</span>
+        </div>
+    </footer>
 </body>
 
 </html>
