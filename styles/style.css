@@ -58,7 +58,18 @@ a {
 }
 
 .our-projects {
-   margin: 30px 0px;
+   /* margin: 30px 0px;*/
+   display: grid;
+   grid-area: our-projects;
+   justify-items: center;
+   /*border: 2px solid blueviolet;*/
+}
+
+.our-tasks {
+   display: grid;
+   grid-area: our-tasks;
+   justify-items: center;
+   /*border: 2px solid blueviolet;*/
 }
 
 .our-tasks__row {
@@ -131,7 +142,7 @@ a {
 
 .footer {
    display: grid;
-   max-height: 420px;
+   margin: 10px auto;
    background-color: #2C2C2C;
    color: #FFFFFF;
 }
@@ -142,36 +153,33 @@ a.link {
 
 .footer__top {
    display: grid;
-   margin: 0 auto;
-   padding: 40px;
+   padding: 8vh;
    grid-template-columns: 1fr 1fr 1.5fr 1fr;
    grid-template-rows: 1fr;
-   grid-template-areas: "ft-logo ft-info ft-contacts ft-social";
+   grid-template-areas: "footer__logo footer__information  footer__contacts footer__social";
+
 }
 
 .footer__logo {
-   grid-area: ft-logo;
    display: grid;
+   grid-area: footer__logo;
    justify-content: start;
    align-items: start;
 }
 
 .footer__information {
-   grid-area: ft-info;
    display: grid;
+   grid-area: footer__information;
    grid-template-columns: 1fr;
    grid-template-rows: repeat(6, 1fr);
-   grid-template-areas: "title1"
-      "ft-boss"
-      "ft-gallery"
-      "ft-projects"
-      "ft-sertificates"
-      "ft-contact";
+   grid-template-areas:
+      "title1"
+      "footer__boss"
+      "footer__gallery"
+      "footer__projects "
+      "footer__sertificates"
+      "footer__contact";
    gap: 20px;
-}
-
-.footer__title {
-   font-size: 20px;
 }
 
 .title1 {
@@ -179,58 +187,55 @@ a.link {
 }
 
 .footer__boss {
-   grid-area: ft-boss;
+   grid-area: footer__boss;
 }
 
 .footer__gallery {
-   grid-area: ft-gallery;
+   grid-area: footer__gallery;
 }
 
 .footer__projects {
-   grid-area: ft-projects;
+   grid-area: footer__projects;
 }
 
 .footer__sertificates {
-   grid-area: ft-sertificates;
+   grid-area: footer__sertificates;
 }
 
 .footer__contact {
-   grid-area: ft-contact;
+   grid-area: footer__contact;
 }
 
-/*"тянет" весь футер вниз*/
-/*.footer__contacts {
-   grid-area: ft-contacts;
+.footer__contacts {
    display: grid;
+   grid-area: footer__contacts;
    grid-template-columns: 1fr;
-   grid-template-rows: repeat(6, 1fr);
-   grid-template-areas: "title2"
-      "ft-location"
-      "."
-      "ft-location"
-      "ft-phone"
-      "ft-mail";
-   gap: 15px;
-}*/
+   grid-template-rows: repeat(4, 1fr);
+   grid-template-areas:
+      "title2"
+      "footer__location"
+      "footer__phone"
+      "footer__mail";
+}
 
 .title2 {
    grid-area: title2;
 }
 
 .footer__location {
-   grid-area: ft-location;
+   grid-area: footer__location;
 }
 
 .footer__phone {
-   grid-area: ft-phone;
+   grid-area: footer__phone;
 }
 
 .footer__mail {
-   grid-area: ft-mail;
+   grid-area: footer__mail;
 }
 
 .footer__social {
-   grid-area: ft-social;
+   grid-area: footer__social;
    display: grid;
    grid-template-columns: 1fr;
    grid-template-rows: 0.5fr 1fr;
