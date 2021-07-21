@@ -57,6 +57,78 @@ a {
    grid-area: contacts;
 }
 
+.our-projects {
+   margin: 30px 0px;
+}
+
+.our-tasks__row {
+   display: grid;
+   width: 90vw;
+   grid-template-columns: 1fr 1fr;
+   gap: 5%;
+}
+
+.our-tasks__title {
+   margin-bottom: 30px;
+   color: #C4C4C4;
+}
+
+.our-tasks__first {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   font-size: 15px;
+}
+
+.our-tasks__second {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   font-size: 15px;
+}
+
+.our-projects__title {
+   margin-bottom: 30px;
+   color: #C4C4C4;
+}
+
+.our-projects__row {
+   display: grid;
+   width: 90vw;
+   grid-template-rows: 1fr 1fr;
+   gap: 15px;
+}
+
+.our-projects__top {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 10px;
+}
+
+.content {
+   position: relative;
+   text-align: center;
+   color: white;
+}
+
+.centered {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.our-projects__bottom {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 20px;
+}
+
+.our-projects__btn {
+   display: grid;
+   width: 90vw;
+   justify-content: right;
+   margin-top: 10px;
+}
+
 .footer {
    display: grid;
    max-height: 420px;
