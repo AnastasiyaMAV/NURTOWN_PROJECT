@@ -1,0 +1,214 @@
+body {
+   max-width: 100%;
+}
+
+.header {
+   display: grid;
+   max-width: 100%;
+   max-height: 102px;
+   grid-template-columns: 1fr 2fr;
+   grid-template-rows: 1fr;
+   grid-template-areas: "logo nav";
+   padding: 15px;
+}
+
+.header__logo {
+   grid-area: logo;
+   display: grid;
+   max-width: 460px;
+   justify-content: center;
+   align-items: center;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+.header__nav {
+   grid-area: nav;
+   display: grid;
+   font-size: 18px;
+   grid-template-columns: repeat (5, 1fr);
+   grid-template-rows: 1fr;
+   grid-template-areas: "boss gallery projects sertificates contacts";
+   justify-content: start;
+   align-items: center;
+   gap: 60px;
+}
+
+.header__boss {
+   grid-area: boss;
+}
+
+.header__gallery {
+   grid-area: gallery;
+}
+
+.header__projects {
+   grid-area: projects;
+}
+
+.header__sertificates {
+   grid-area: sertificates;
+}
+
+.header__contacts {
+   grid-area: contacts;
+}
+
+.footer {
+   display: grid;
+   max-height: 420px;
+   background-color: #2C2C2C;
+   color: #FFFFFF;
+}
+
+a.link {
+   color: #FFFFFF;
+}
+
+.footer__top {
+   display: grid;
+   margin: 0 auto;
+   padding: 40px;
+   grid-template-columns: 1fr 1fr 1.5fr 1fr;
+   grid-template-rows: 1fr;
+   grid-template-areas: "ft-logo ft-info ft-contacts ft-social";
+}
+
+.footer__logo {
+   grid-area: ft-logo;
+   display: grid;
+   justify-content: start;
+   align-items: start;
+}
+
+.footer__information {
+   grid-area: ft-info;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(6, 1fr);
+   grid-template-areas: "title1"
+      "ft-boss"
+      "ft-gallery"
+      "ft-projects"
+      "ft-sertificates"
+      "ft-contact";
+   gap: 20px;
+}
+
+.footer__title {
+   font-size: 20px;
+}
+
+.title1 {
+   grid-area: title1;
+}
+
+.footer__boss {
+   grid-area: ft-boss;
+}
+
+.footer__gallery {
+   grid-area: ft-gallery;
+}
+
+.footer__projects {
+   grid-area: ft-projects;
+}
+
+.footer__sertificates {
+   grid-area: ft-sertificates;
+}
+
+.footer__contact {
+   grid-area: ft-contact;
+}
+
+/*"тянет" весь футер вниз*/
+/*.footer__contacts {
+   grid-area: ft-contacts;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(6, 1fr);
+   grid-template-areas: "title2"
+      "ft-location"
+      "."
+      "ft-location"
+      "ft-phone"
+      "ft-mail";
+   gap: 15px;
+}*/
+
+.title2 {
+   grid-area: title2;
+}
+
+.footer__location {
+   grid-area: ft-location;
+}
+
+.footer__phone {
+   grid-area: ft-phone;
+}
+
+.footer__mail {
+   grid-area: ft-mail;
+}
+
+.footer__social {
+   grid-area: ft-social;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.5fr 1fr;
+   grid-template-areas: "title3"
+      "wrapper";
+   justify-content: start;
+}
+
+.title3 {
+   grid-area: title3;
+}
+
+.footer__social-wrapper {
+   grid-area: wrapper;
+   display: grid;
+   max-width: 195px;
+   grid-template-columns: repeat (4, 1fr);
+   grid-template-rows: 1fr;
+   grid-template-areas: "facebook twitter linked pinterest";
+}
+
+.facebook {
+   grid-area: facebook;
+}
+
+.twitter {
+   grid-area: twitter;
+}
+
+.linked {
+   grid-area: linked;
+}
+
+.pinterest {
+   grid-area: pinterest;
+}
+
+/*не отображается линия, хотя должна*/
+.footer__hr {
+   border: none;
+   background-color: #ece2e2;
+   height: 4px;
+}
+
+.footer__bottom {
+   display: grid;
+   font-size: 16px;
+   color: #414141;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+
+}
