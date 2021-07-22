@@ -101,7 +101,6 @@ a {
 
 .our-tasks {
    display: grid;
-   grid-area: our-tasks;
    width: 100vw;
    justify-content: center;
    margin-top: 100px;
@@ -117,7 +116,6 @@ a {
 .our-tasks__first {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   font-size: 15px;
 }
 
 .our-tasks__second {
@@ -141,7 +139,6 @@ a {
 
 .our-projects__row {
    display: grid;
-   max-width: 1170px;
    margin-top: 20px;
    grid-template-rows: 1fr 1fr;
    gap: 15px;
@@ -150,7 +147,7 @@ a {
 .our-projects__top {
    display: grid;
    justify-content: space-between;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1.5fr 1.5fr;
    gap: 20px;
 }
 
