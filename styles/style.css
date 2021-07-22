@@ -173,11 +173,10 @@ a {
    gap: 30px;
 }
 
-.our-projects__btn {
+.our-projects__btn-row {
    display: grid;
-   grid-template-columns: 1fr;
    justify-items: right;
-   margin-top: 10px;
+   margin-top: 20px;
 }
 
 .footer {
