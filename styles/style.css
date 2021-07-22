@@ -102,14 +102,15 @@ a {
 .our-tasks {
    display: grid;
    grid-area: our-tasks;
-   max-width: 1170px;
-   margin: 10%;
-   /*border: 2px solid blueviolet;*/
+   width: 100vw;
+   justify-content: center;
+   margin-top: 100px;
 }
 
 .our-tasks__row {
    display: grid;
    grid-template-columns: 1fr 1fr;
+   max-width: 1170px;
    gap: 5%;
 }
 
@@ -134,7 +135,7 @@ a {
    display: grid;
    max-width: 1170px;
    grid-area: our-projects;
-   margin: 10% auto;
+   margin: 100px auto 20px;
    color: #C4C4C4;
 }
 
