@@ -81,7 +81,7 @@ a {
 }
 
 .carousel-inner {
-   max-width: 75%;
+   max-width: 80%;
 }
 
 /*отступ карусели справа*/
@@ -90,6 +90,13 @@ a {
    position: absolute;
    left: 1%;
    top: 93%;
+   transform: translate (-1%, -93%);
+   -ms-transform: translate(-1%, -93%);
+   border-radius: 0px;
+}
+
+.introduction__item>img {
+   max-width: 100%;
 }
 
 .our-projects {
