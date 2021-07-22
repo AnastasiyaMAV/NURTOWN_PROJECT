@@ -92,11 +92,68 @@ a {
    top: 93%;
    transform: translate (-1%, -93%);
    -ms-transform: translate(-1%, -93%);
+
+}
+
+.white-button {
    border-radius: 0px;
 }
 
 .introduction__item>img {
    max-width: 100%;
+}
+
+.about__row>img {
+   max-width: 100%;
+}
+
+.about__row {
+   display: grid;
+   grid-template-columns: 35% 25% 40%;
+   grid-template-rows: 1fr;
+   grid-template-areas: "about__col_first about__col_second about__col_third";
+   justify-content: center;
+   align-content: center;
+   justify-items: center;
+   background-color: rgba(239, 239, 240, 0.445);
+   margin-top: 10%;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
+.about__img_first {
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+
+.about__img_third {
+   padding-bottom: 20px;
+
+}
+
+.about__img_second {
+
+   max-height: 80%;
+
+}
+
+.about__col_first {
+   grid-area: about__col_first;
+   display: grid;
+   justify-content: right;
+}
+
+.about__col_second {
+   grid-area: about__col_second;
+   display: grid;
+   align-content: center;
+}
+
+.about__col_third {
+   grid-area: about__col_third;
+   display: grid;
+   justify-content: start;
+   align-content: center;
 }
 
 .our-projects {
@@ -207,8 +264,7 @@ a.link {
    grid-area: footer__information;
    grid-template-columns: 1fr;
    grid-template-rows: repeat(6, 1fr);
-   grid-template-areas:
-      "title1"
+   grid-template-areas: "title1"
       "footer__boss"
       "footer__gallery"
       "footer__projects "
@@ -246,8 +302,7 @@ a.link {
    grid-area: footer__contacts;
    grid-template-columns: 1fr;
    grid-template-rows: repeat(4, 1fr);
-   grid-template-areas:
-      "title2"
+   grid-template-areas: "title2"
       "footer__location"
       "footer__phone"
       "footer__mail";
@@ -274,8 +329,7 @@ a.link {
    display: grid;
    grid-template-columns: 1fr;
    grid-template-rows: 10% 1fr;
-   grid-template-areas:
-      "title3"
+   grid-template-areas: "title3"
       "footer__social-wrapper";
    justify-content: start;
 }
@@ -290,8 +344,7 @@ a.link {
    max-width: 195px;
    grid-template-columns: repeat (4, 1fr);
    grid-template-rows: 1fr;
-   grid-template-areas:
-      "footer__facebook footer__twitter footer__linked footer__pinterest";
+   grid-template-areas: "footer__facebook footer__twitter footer__linked footer__pinterest";
 }
 
 .footer__facebook {
