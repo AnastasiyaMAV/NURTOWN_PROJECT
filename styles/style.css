@@ -165,22 +165,21 @@ max-width: 100%;
 
 .our-tasks {
    display: grid;
-   grid-area: our-tasks;
-   max-width: 1170px;
-   margin: 10%;
-   /*border: 2px solid blueviolet;*/
+   width: 100vw;
+   justify-content: center;
+   margin-top: 100px;
 }
 
 .our-tasks__row {
    display: grid;
    grid-template-columns: 1fr 1fr;
+   max-width: 1170px;
    gap: 5%;
 }
 
 .our-tasks__first {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   font-size: 15px;
 }
 
 .our-tasks__second {
@@ -198,13 +197,12 @@ max-width: 100%;
    display: grid;
    max-width: 1170px;
    grid-area: our-projects;
-   margin: 10% auto;
+   margin: 100px auto 20px;
    color: #C4C4C4;
 }
 
 .our-projects__row {
    display: grid;
-   max-width: 1170px;
    margin-top: 20px;
    grid-template-rows: 1fr 1fr;
    gap: 15px;
@@ -213,7 +211,7 @@ max-width: 100%;
 .our-projects__top {
    display: grid;
    justify-content: space-between;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1.5fr 1.5fr;
    gap: 20px;
 }
 
@@ -236,11 +234,10 @@ max-width: 100%;
    gap: 30px;
 }
 
-.our-projects__btn {
+.our-projects__btn-row {
    display: grid;
-   grid-template-columns: 1fr;
    justify-items: right;
-   margin-top: 10px;
+   margin-top: 20px;
 }
 
 .footer {
