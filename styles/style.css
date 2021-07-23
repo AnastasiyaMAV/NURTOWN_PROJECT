@@ -98,6 +98,7 @@ a {
 
 .white-button {
    border-radius: 0px;
+
 }
 
 .introduction__item>img {
@@ -117,24 +118,27 @@ a {
    align-content: center;
    justify-items: center;
    background-color: rgba(239, 239, 240, 0.445);
-   margin-top: 10%;
-   margin-left: 10%;
-   margin-right: 10%;
+
+   margin-top: 8%;
+   margin-left: 8%;
+   margin-right: 8%;
+   grid-column-gap: 20px;
 }
 
 .about__img_first {
    margin-top: 15px;
    margin-bottom: 15px;
+   max-width: 100%;
 }
 
 .about__img_third {
    padding-bottom: 20px;
+   max-width: 100%;
 
 }
 
 .about__img_second {
    max-width: 100%;
-   max-height: 80%;
 
 }
 
@@ -155,6 +159,21 @@ a {
    display: grid;
    justify-content: start;
    align-content: center;
+   margin-right: 5%;
+}
+
+.about__title {
+   color: #C4C4C4;
+}
+
+.about_txt {
+
+   font-size: 1.5em;
+}
+
+.about__button {
+   background-color: white;
+   max-width: 50%;
 }
 
 /*article: our-tasks и our-projects - Олеся*/
