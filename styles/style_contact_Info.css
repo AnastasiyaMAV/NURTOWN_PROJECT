@@ -8,6 +8,7 @@
         "header__grid header__grid"
         "content__grid content__grid"
         "footer__grid footer__grid";
+    justify-items: center;
 }
 
 .header {
@@ -75,10 +76,20 @@ a {
     grid-area: content__grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    gap: 5em;
 }
 
 .footer__grid {
     display: grid;
     grid-area: footer__grid;
     border: 2px solid blueviolet;
+}
+
+.border_style {
+    border-radius: 0px;
+}
+
+.map_style {
+    width: 130%;
+    height: 80%;
 }

@@ -10,7 +10,7 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>NURTOWN</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/png">
-    <link rel="stylesheet" href="styles/style_contact_Info.css">
+    <link rel="stylesheet" href="styles/style_contact_info.css">
     
 </head>
 
@@ -28,7 +28,7 @@
         </header>
 
         <article class="content__grid">
-            <div class="jumbotron">
+            <div class="jumbotron bg-white">
                 <h1 class="display-4">КОНТАКТНАЯ</h1>
                 <h1 class="display-4">ИНФОРМАЦИЯ</h1>
                 <span class="lead">«Digital Project»</span>
@@ -36,7 +36,7 @@
                 <p>+7 (701) 77 76 811</p>
                 <p>Galym.sultanov@mail.ru</p>
                 <p class="lead">
-                    <a href="#" class="btn btn-secondary btn-lg" style="border-radius: 0px;" role="button"
+                    <a href="#" class="btn btn-secondary btn-lg border_style" role="button"
                     aria-pressed="true" data-toggle="modal" data-target="#exampleModal">ОБРАТНАЯ СВЯЗЬ</a>
                 </p>
             </div> 
@@ -45,7 +45,7 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Задать вопрос</h5>
+                            <h5 class="modal-title text-center" id="exampleModalLabel">Задать вопрос</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -53,22 +53,22 @@
                         <div class="modal-body">
                             <form>
                                 <div class="form-group">
-                                    <input type="text" class="form-control bg-light" style="border-radius: 0px;" placeholder="Имя">
+                                    <input type="text" class="form-control bg-light border_style" placeholder="Имя">
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control bg-light" style="border-radius: 0px;"
+                                    <input type="tel" class="form-control bg-light border_style"
                                         placeholder="Номер телефона*">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control bg-light" style="border-radius: 0px;"
+                                    <input type="email" class="form-control bg-light border_style"
                                         placeholder="E-mail*">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control bg-light" style="border-radius: 0px;"
+                                    <input type="text" class="form-control bg-light border_style"
                                         placeholder="Интересующий товар/услуга">
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control bg-light" rows="3" style="border-radius: 0px;"
+                                    <textarea class="form-control bg-light border_style" rows="3"
                                         placeholder="Сообщение*"></textarea>
                                 </div>
                                 <div class="form-check">
@@ -76,16 +76,40 @@
                                     <label class="form-check-label" for="exampleCheck1">Отправляя заявку Вы соглашаетесь с политикой
                                         конфиденциальности</label>
                                 </div>
-                                <div class="content__grid__btn-row"><div class="content__grid__btn"><a href="#" class="btn btn-secondary btn-lg active" role="button"
-                                    aria-pressed="true" data-toggle="modal" data-target="#exampleModal">Отправить</a></div>
+                                <div class="content__grid__btn-row"><div class="content__grid__btn"><a href="#" 
+                                    class="btn btn-secondary btn-lg btn-block border_style" role="button"
+                                    aria-pressed="true" data-toggle="modal" data-target="#exampleModalCenter">Отправить</a>
                                 </div>
-                            </form>
-                        </div>
+                                </div>                            
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="images/contact_info/success.png" class="rounded mx-auto d-block" alt="image">
+                                                <h5 class="text-center">СПАСИБО !</h5>
+                                                <p class="text-center">Ваше сообщение отправлено. </p>
+                                                <p class="text-center">Мы свяжемся с вами в ближайшее время</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="#" class="btn btn-secondary btn-lg btn-block border_style"
+                                                role="button" aria-pressed="true"  data-dismiss="modal"> ВЕРНУТЬСЯ НАЗАД</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </form>                            
+                        </div>                        
                     </div>
                 </div>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d643.4961470227933!2d73.08505512920013!3d49.823954863910274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424346c3b32ffcaf%3A0x41481e634d919f9e!2z0YPQuy4g0KLQtdC70LXQstC40LfQuNC-0L3QvdCw0Y8gMTAsINCa0LDRgNCw0LPQsNC90LTQsCAxMDAwMDAsINCa0LDQt9Cw0YXRgdGC0LDQvQ!5e0!3m2!1sru!2sru!4v1626989037325!5m2!1sru!2sru" 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
+        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d643.4961470227933!2d73.08505512920013!3d49.823954863910274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424346c3b32ffcaf%3A0x41481e634d919f9e!2z0YPQuy4g0KLQtdC70LXQstC40LfQuNC-0L3QvdCw0Y8gMTAsINCa0LDRgNCw0LPQsNC90LTQsCAxMDAwMDAsINCa0LDQt9Cw0YXRgdGC0LDQvQ!5e0!3m2!1sru!2sru!4v1626989037325!5m2!1sru!2sru"
+                class="map_style" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
         </article>  
         
         <footer class="footer__grid">Футер</footer>

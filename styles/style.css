@@ -297,6 +297,11 @@ a {
    max-width: 45%;
 }
 
+.border_style {
+   /*Кнопки и формы становятся без закругления, как на макете */
+   border-radius: 0px;
+}
+
 /*footer - Ольга*/
 .footer {
    display: grid;
