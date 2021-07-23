@@ -175,25 +175,27 @@ a {
 }
 
 /*article: our-tasks и our-projects - Олеся*/
-.our-projects {
-   display: grid;
-   grid-area: our-projects;
-   margin: 10% auto;
-   border: 2px solid blueviolet;
+.our-tasks {
+   margin: 100px auto;
+   width: 100vw;
+   max-width: 1170px;
+   justify-content: center;
 }
 
-.our-tasks {
-   display: grid;
-   width: 100vw;
-   justify-content: center;
-   margin-top: 100px;
+.our-tasks__title {
+   font-family: TT Hoves;
+   font-weight: 300;
+   font-style: normal;
+   font-size: 64px;
+   color: #C4C4C4;
+   margin-bottom: 30px;
 }
 
 .our-tasks__row {
    display: grid;
-   grid-template-columns: 1fr 1fr;
-   max-width: 1170px;
-   gap: 5%;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-template-rows: repeat(1, 1fr);
+   gap: 20px;
 }
 
 .our-tasks__first {
@@ -207,50 +209,73 @@ a {
    font-size: 15px;
 }
 
-.our-tasks__title {
-   margin-bottom: 30px;
-   color: #C4C4C4;
-}
-
 .our-projects {
    display: grid;
    max-width: 1170px;
    grid-area: our-projects;
    margin: 100px auto 20px;
+}
+
+.our-projects__title {
+   font-family: TT Hoves;
+   font-weight: 300;
+   font-style: normal;
+   font-size: 64px;
    color: #C4C4C4;
 }
 
 .our-projects__row {
-   display: grid;
    margin-top: 20px;
-   grid-template-rows: 1fr 1fr;
-   gap: 15px;
 }
 
 .our-projects__top {
    display: grid;
    justify-content: space-between;
-   grid-template-columns: 1.5fr 1.5fr;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-template-rows: repeat(auto-fit, 1fr);
    gap: 20px;
 }
 
-.content {
+.our-projects__img {
    position: relative;
-   text-align: center;
-   color: white;
 }
+
+.our-projects__img>img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.our-projects__btn-container {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+}
+
 
 .centered {
    position: absolute;
+   text-align: center;
+   color: white;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
 }
 
+.centered>h4 {
+   font-weight: 700;
+   font-style: bold;
+   font-size: 50px;
+}
+
 .our-projects__bottom {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   gap: 30px;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+   grid-template-rows: repeat(auto-fit, 1fr);
+   margin-top: 20px;
+   gap: 20px;
 }
 
 .our-projects__btn-row {
