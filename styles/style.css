@@ -93,7 +93,6 @@ a {
    left: 1%;
    top: 93%;
    transform: translate(-1%, -93%);
-   -ms-transform: translate(-1%, -93%);
 }
 
 .white-button {
@@ -446,6 +445,29 @@ a.link {
 }
 
 @media screen and (max-width: 360px) {
+   .introduction {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.3fr 1fr;
+      grid-template-areas: "introduction__txt""introduction__slider";
+   }
+
+   .introduction__txt {
+      grid-area: introduction__txt;
+      display: grid;
+      justify-content: start;
+      margin-left: 5%;
+
+   }
+
+   .carousel-inner {
+      max-width: 100%;
+   }
+
+   .introduction__button {
+      display: none;
+   }
+
    .about__row {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -493,6 +515,33 @@ a.link {
 }
 
 @media screen and (min-width: 361px) and (max-width: 499px) {
+   .introduction {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.3fr 1fr;
+      grid-template-areas: "introduction__txt""introduction__slider";
+   }
+
+   .introduction__txt {
+      grid-area: introduction__txt;
+      display: grid;
+      justify-content: start;
+      margin-left: 5%;
+
+   }
+
+   .carousel-inner {
+      max-width: 100%;
+   }
+
+   .introduction__button {
+      position: absolute;
+      left: 1%;
+      top: 93%;
+      transform: translate(-1%, -93%);
+
+   }
+
    .about__row {
       display: grid;
       grid-template-columns: 1fr 1fr;
