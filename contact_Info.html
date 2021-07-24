@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <div class="container__grid">
-        <header class="header">
+    <!--<div class="container__grid"> -->
+        <header class="header__grid">
             <div class="header__logo"><img src="images/logo.png" alt="logo"></div>
             <div class="header__nav">
                 <div class="header__boss"><a href="index.html">ГЛАВНАЯ</a></div>
@@ -29,8 +29,8 @@
 
         <article class="content__grid">
             <div class="jumbotron bg-white">
-                <h1 class="display-4">КОНТАКТНАЯ</h1>
-                <h1 class="display-4">ИНФОРМАЦИЯ</h1>
+                <div class="content__style_1">КОНТАКТНАЯ</div>
+                <div class="content__style_2">ИНФОРМАЦИЯ</div>
                 <span class="lead">«Digital Project»</span>
                 <p>г. Караганда, ул. Телевизионная 10</p>
                 <p>+7 (701) 77 76 811</p>
@@ -112,8 +112,51 @@
                 class="map_style" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
         </article>  
         
-        <footer class="footer__grid">Футер</footer>
-
+        <footer class="footer__grid">
+            <div class="footer__top">
+                <div class="footer__logo"><img src="images/logo-footer.png" alt="logo-footer"></div>
+                <div class="footer__information">
+                    <a href="#" class="title1 link">Информация</a>
+                    <a href="#" class="footer__boss link">Главная</a>
+                    <a href="gallery.html" class="footer__gallery link">Галерея</a>
+                    <a href="#" class="footer__projects link">Проекты</a>
+                    <a href="#" class="footer__sertificates link">Сертификаты</a>
+                    <a href="#" class="footer__contact link">Контакты</a>
+                </div>
+                <div class="footer__contacts">
+                    <span class="title2">Контакты</span>
+                    <div class="footer__location"><p><img src="images/geoloc.png" alt="geoloc">
+                        &nbsp;&nbsp;&nbsp;100000, Республика Казахстан,<br> г. Караганда, ул. Телевизионная 10</p>
+                    </div>
+                    <div class="footer__phone"><img src="images/phone.png" alt="phone">
+                        <span>&nbsp;&nbsp;&nbsp;+7 (701) 77 76 811</span></div>
+                    <div class="footer__mail"><img src="images/mail.png"
+                            alt="mail"><span>&nbsp;&nbsp;&nbsp;Galym.sultanov@mail.ru</span></div>
+                </div>
+                <div class="footer__contacts-min361px">
+                    <span class="title2-min361px">Контакты</span>
+                    <div class="footer__phone-min361px"><a href="tel:+77017776811" class="btn btn-min361px"><img src="images/phone.png" alt="phone"></a></div>
+                    <div class="footer__mail-min361px"><a href="mailto:Galym.sultanov@mail.ru" class="btn btn-min361px"><img src="images/mail.png"
+                        alt="mail"></a></div>
+                </div>
+                <div class="footer__social">
+                    <div><span class="title3">Социальные сети</span></div>
+                    <div class="footer__social-wrapper">
+                        <a href="#" class="footer__facebook"><img src="images/facebook.png" alt="facebook"></a>
+                        <a href="#" class="footer__twitter"><img src="images/twitter.png" alt="twitter"></a>
+                        <a href="#" class="footer__linked"><img src="images/linked.png" alt="linked"></a>
+                        <a href="#" class="footer__pinterest"><img src="images/pinterest.png" alt="pinterest"></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer__line">
+            <div class="footer__bottom">
+                <span class="footer__copyright">&copy;&nbsp;2019 Digital Project. Все права защищены.</span>
+            </div>
+            <div class="footer__bottom-min361px">
+                <span class="footer__copyright">Digital Project&copy;2019</span>
+            <!--</div> -->
+        </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

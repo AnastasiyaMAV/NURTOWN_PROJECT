@@ -70,7 +70,7 @@ a {
 }
 
 .introduction__title {
-   font-size: 1.5em;
+   font-size: 2.5em;
    font-weight: bold;
 }
 
@@ -97,13 +97,11 @@ a {
 
 .white-button {
    border-radius: 0px;
-
 }
 
 .introduction__item>img {
    max-width: 100%;
 }
-
 
 .about__row {
    display: grid;
@@ -114,7 +112,6 @@ a {
    align-content: center;
    justify-items: center;
    background-color: rgba(239, 239, 240, 0.445);
-
    margin-top: 8%;
    margin-left: 8%;
    margin-right: 8%;
@@ -129,12 +126,10 @@ a {
 .about__img_third {
    margin-top: 5%;
    max-width: 100%;
-
 }
 
 .about__img_second {
    max-width: 100%;
-
 }
 
 .about__col_first {
@@ -164,7 +159,6 @@ a {
 }
 
 .about_txt {
-
    font-size: 1.5em;
 }
 
@@ -185,7 +179,7 @@ a {
    font-family: "TT Hoves";
    font-weight: 300;
    font-style: normal;
-   font-size: 64px;
+   font-size: 2.5em;
    color: #C4C4C4;
    margin-bottom: 30px;
 }
@@ -219,7 +213,7 @@ a {
    font-family: "TT Hoves";
    font-weight: 300;
    font-style: normal;
-   font-size: 64px;
+   font-size: 2.5em;
    color: #C4C4C4;
 }
 
@@ -253,7 +247,6 @@ a {
    right: 0;
 }
 
-
 .centered {
    position: absolute;
    text-align: center;
@@ -266,7 +259,7 @@ a {
 .centered>h4 {
    font-weight: 700;
    font-weight: bold;
-   font-size: 50px;
+   font-size: 2em;
 }
 
 .our-projects__bottom {
@@ -292,12 +285,8 @@ a {
    margin: 5% auto 5%;
 }
 
-.content-image__contact {
-   max-width: 45%;
-}
-
 .border_style {
-   /*Кнопки и формы становятся без закругления, как на макете */
+   /*Кнопки и формы становятся без закругления, как на макете*/
    border-radius: 0px;
 }
 
@@ -364,7 +353,6 @@ a.link {
 .footer__contact {
    grid-area: footer__contact;
 }
-
 
 .footer__contacts {
    display: grid;
@@ -463,7 +451,6 @@ a.link {
       display: grid;
       justify-content: start;
       margin-left: 5%;
-
    }
 
    .carousel-inner {
@@ -490,7 +477,6 @@ a.link {
 
    .about__button {
       max-width: 50%;
-
    }
 
    .about__col_third {
@@ -519,6 +505,10 @@ a.link {
       display: none;
    }
 
+   .content-image__contact {
+      display: none;
+   }
+
    .footer {
       display: none;
    }
@@ -538,7 +528,6 @@ a.link {
       display: grid;
       justify-content: start;
       margin-left: 5%;
-
    }
 
    .carousel-inner {
@@ -550,7 +539,6 @@ a.link {
       left: 1%;
       top: 93%;
       transform: translate(-1%, -93%);
-
    }
 
    .about__row {
@@ -594,13 +582,17 @@ a.link {
       margin-left: 5%;
    }
 
+   .content-image__contact {
+      display: none;
+   }
+
    .footer__top {
       display: grid;
       padding: 8vh;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 0.5fr 1fr;
       grid-template-areas: "footer__logo footer__logo footer__logo"
-         "footer__information  footer__contacts-min500px footer__social";
+         "footer__information  footer__contacts-min361px footer__social";
       gap: 20px;
    }
 
@@ -676,7 +668,7 @@ a.link {
 
 }
 
-@media screen and (min-width: 361px) and (max-width: 768px) {
+@media screen and (min-width: 500px) and (max-width: 768px) {
    .about__row {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -718,6 +710,10 @@ a.link {
    .about__button {
       max-width: 40%;
       margin-left: 5%;
+   }
+
+   .content-image__contact {
+      max-width: 45%;
    }
 
    .footer__top {
@@ -803,6 +799,9 @@ a.link {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+   .content-image__contact {
+      max-width: 45%;
+   }
 
    .footer__contacts-min361px {
       display: none;
@@ -830,6 +829,10 @@ a.link {
 }
 
 @media screen and (min-width: 1024px) {
+   .content-image__contact {
+      max-width: 45%;
+   }
+
    .footer__contacts-min361px {
       display: none;
    }
