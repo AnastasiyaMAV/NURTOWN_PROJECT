@@ -445,9 +445,95 @@ a.link {
    padding: 2%;
 }
 
-@media screen and (max-width: 360px) {}
+@media screen and (max-width: 360px) {
+   .about__row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1.5fr 0.7fr;
+      grid-template-areas: 'about__col_third about__col_third''about__col_second about__col_first';
+      justify-content: center;
+      align-content: center;
+      margin-top: 8%;
+      margin-left: 8%;
+      margin-right: 8%;
+      font-size: 1em;
+      background-color: white;
+   }
 
-@media screen and (min-width: 361px) and (max-width: 499px) {}
+   .about__button {
+      max-width: 50%;
+
+   }
+
+   .about__col_third {
+      grid-area: about__col_third;
+      display: grid;
+      justify-content: center;
+      align-content: space-around;
+   }
+
+   .about__title {
+      color: #C4C4C4;
+      margin-left: 5%;
+   }
+
+   .about_txt {
+      margin-left: 10%;
+      margin-left: 5%;
+   }
+
+   .about__button {
+      max-width: 40%;
+      margin-left: 5%;
+   }
+
+   .about__button>img {
+      display: none;
+   }
+}
+
+@media screen and (min-width: 361px) and (max-width: 499px) {
+   .about__row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1.5fr 0.7fr;
+      grid-template-areas: 'about__col_third about__col_third''about__col_second about__col_first';
+      justify-content: center;
+      align-content: center;
+      margin-top: 8%;
+      margin-left: 8%;
+      margin-right: 8%;
+      font-size: 1.1em;
+      background-color: white;
+   }
+
+   .about__button {
+      max-width: 40%;
+   }
+
+   .about__col_third {
+      grid-area: about__col_third;
+      display: grid;
+      justify-content: center;
+      align-content: space-around;
+   }
+
+   .about__title {
+      color: #C4C4C4;
+      margin-left: 5%;
+   }
+
+   .about_txt {
+      margin-left: 10%;
+      font-size: 1.3em;
+      margin-left: 5%;
+   }
+
+   .about__button {
+      max-width: 40%;
+      margin-left: 5%;
+   }
+}
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
    .about__row {
@@ -473,7 +559,7 @@ a.link {
       grid-area: about__col_third;
       display: grid;
       justify-content: center;
-      align-content: center;
+      align-content: space-around;
    }
 
    .about__title {
