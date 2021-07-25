@@ -1,7 +1,7 @@
 .container__grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 1fr 1fr;
+    grid-template-rows: 10% 1fr 1fr;
     grid-template-areas:
         "header__grid header__grid"
         "content__grid content__grid"
@@ -15,6 +15,7 @@
     grid-template-rows: 1fr;
     grid-template-areas: "header__logo header__nav";
     padding: 5vh;
+    /*border: solid 3px #f71313;*/
 }
 
 .header__logo {
@@ -33,7 +34,6 @@ a {
 .header__nav {
     grid-area: header__nav;
     display: grid;
-    font-size: 18px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas:
@@ -41,6 +41,10 @@ a {
     justify-content: start;
     align-items: center;
     gap: 4vw;
+    font-family: "TT Hoves";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
 }
 
 .header__boss {
@@ -61,6 +65,20 @@ a {
 
 .header__contacts {
     grid-area: header__contacts;
+}
+
+ul.header__link-max768 {
+    align-items: center;
+}
+
+li.text-muted>a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+li.text-muted>a:hover {
+    text-decoration: none;
+    color: #7A7A7A;
 }
 
 .border_style {
@@ -121,8 +139,6 @@ a {
     color: #333333;
 }
 
-
-
 .footer__grid {
     display: grid;
     grid-area: footer__grid;
@@ -133,8 +149,7 @@ a {
     font-weight: 400;
     font-style: normal;
     color: #FFFFFF;
-
-    border: solid 3px #f71313;
+    /*border: solid 3px #f71313;*/
 }
 
 a.link {
@@ -282,10 +297,14 @@ a.link {
     .container__grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 20% 1fr;
+        grid-template-rows: 30% 1fr;
         grid-template-areas:
             "header__grid header__grid"
             "content__grid content__grid";
+    }
+
+    .header__grid {
+        display: none;
     }
 
     .content__grid {
@@ -294,6 +313,7 @@ a.link {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
+        align-items: center;
     }
 
     .map_style {
@@ -307,12 +327,26 @@ a.link {
 }
 
 @media screen and (min-width: 361px) and (max-width: 499px) {
+    .container__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 17% 1fr 1fr;
+        grid-template-areas:
+            "header__grid header__grid"
+            "content__grid content__grid"
+            "footer__grid footer__grid";
+    }
+
     .content__grid {
         display: grid;
         grid-area: content__grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
+    }
+
+    .header__grid {
+        display: none;
     }
 
     .map_style {
@@ -328,7 +362,6 @@ a.link {
         grid-template-areas: "footer__logo footer__logo footer__logo"
             "footer__information footer__contacts-min361px footer__social";
         gap: 20px;
-
     }
 
     .footer__logo {
@@ -407,12 +440,27 @@ a.link {
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
+    .container__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 16% 1fr 1fr;
+        grid-template-areas:
+            "header__grid header__grid"
+            "content__grid content__grid"
+            "footer__grid footer__grid";
+    }
+
     .content__grid {
         display: grid;
         grid-area: content__grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
+        align-items: center;
+    }
+
+    .header__grid {
+        display: none;
     }
 
     .map_style {
@@ -507,13 +555,17 @@ a.link {
         grid-area: content__grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
+        align-items: center;
+    }
+
+    .header-max768 {
+        display: none;
     }
 
     .map_style {
         width: 70%;
         height: 70%;
     }
-
 
     .footer__contacts-min361px {
         display: none;
@@ -546,6 +598,11 @@ a.link {
         grid-area: content__grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
+        align-items: center;
+    }
+
+    .header-max768 {
+        display: none;
     }
 
     .map_style {

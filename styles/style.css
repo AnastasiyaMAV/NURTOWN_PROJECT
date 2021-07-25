@@ -24,7 +24,6 @@ a {
 .header__nav {
    grid-area: header__nav;
    display: grid;
-   font-size: 1vw;
    grid-template-columns: repeat(5, 1fr);
    grid-template-rows: 1fr;
    grid-template-areas:
@@ -32,6 +31,10 @@ a {
    justify-content: start;
    align-items: center;
    gap: 2vw;
+   font-family: "TT Hoves";
+   font-weight: 400;
+   font-style: normal;
+   font-size: 2vw;
 }
 
 .header__boss {
