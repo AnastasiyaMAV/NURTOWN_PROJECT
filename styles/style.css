@@ -5,7 +5,7 @@
    grid-template-columns: 1fr 2fr;
    grid-template-rows: 1fr;
    grid-template-areas: "header__logo header__nav";
-   padding: 5vh;
+   padding: 1vh;
 }
 
 .header__logo {
@@ -24,14 +24,14 @@ a {
 .header__nav {
    grid-area: header__nav;
    display: grid;
-   font-size: 18px;
+   font-size: 1vw;
    grid-template-columns: repeat(5, 1fr);
    grid-template-rows: 1fr;
    grid-template-areas:
       "header__boss header__gallery header__projects header__sertificates header__contacts";
    justify-content: start;
    align-items: center;
-   gap: 4vw;
+   gap: 2vw;
 }
 
 .header__boss {
@@ -658,13 +658,12 @@ a.link {
       display: none;
    }
 
+   .footer__line {
+      display: none;
+   }
+
    .footer__bottom-min361px {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      font-size: 16px;
-      color: #414141;
-      padding: 2%;
+      display: none;
    }
 
 }
