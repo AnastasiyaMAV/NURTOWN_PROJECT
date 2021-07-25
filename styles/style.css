@@ -54,6 +54,20 @@ a {
    grid-area: header__contacts;
 }
 
+ul.header__link-max768 {
+   align-items: center;
+}
+
+li.text-muted>a {
+   text-decoration: none;
+   color: #FFFFFF;
+}
+
+li.text-muted>a:hover {
+   text-decoration: none;
+   color: #7A7A7A;
+}
+
 /*article: introduction и about - Лариса*/
 .introduction {
    display: grid;
@@ -440,6 +454,10 @@ a.link {
 }
 
 @media screen and (max-width: 360px) {
+   .header {
+      display: none;
+   }
+
    .introduction {
       display: grid;
       grid-template-columns: 1fr;
@@ -517,6 +535,10 @@ a.link {
 }
 
 @media screen and (min-width: 361px) and (max-width: 499px) {
+   .header {
+      display: none;
+   }
+
    .introduction {
       display: grid;
       grid-template-columns: 1fr;
@@ -593,7 +615,7 @@ a.link {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 0.5fr 1fr;
       grid-template-areas: "footer__logo footer__logo footer__logo"
-         "footer__information  footer__contacts-min361px footer__social";
+         "footer__information footer__contacts-min361px footer__social";
       gap: 20px;
    }
 
@@ -665,10 +687,13 @@ a.link {
    .footer__bottom-min361px {
       display: none;
    }
-
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
+   .header {
+      display: none;
+   }
+
    .about__row {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -799,6 +824,10 @@ a.link {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+   .header-max768 {
+      display: none;
+   }
+
    .content-image__contact {
       max-width: 45%;
    }
@@ -829,6 +858,10 @@ a.link {
 }
 
 @media screen and (min-width: 1024px) {
+   .header-max768 {
+      display: none;
+   }
+
    .content-image__contact {
       max-width: 45%;
    }
