@@ -1,3 +1,75 @@
+@font-face {
+   font-family: 'TT Hoves';
+   src: url('fonts/TTHoves-Light.eot');
+   src: local('TT Hoves Light'), local('TTHoves-Light'),
+      url('fonts/TTHoves-Light.eot?#iefix') format('embedded-opentype'),
+      url('fonts/TTHoves-Light.woff2') format('woff2'),
+      url('fonts/TTHoves-Light.woff') format('woff'),
+      url('fonts/TTHoves-Light.ttf') format('truetype');
+   font-weight: 300;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'TT Hoves';
+   src: url('fonts/TTHoves-Regular.eot');
+   src: local('TT Hoves Regular'), local('TTHoves-Regular'),
+      url('fonts/TTHoves-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/TTHoves-Regular.woff2') format('woff2'),
+      url('fonts/TTHoves-Regular.woff') format('woff'),
+      url('fonts/TTHoves-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'TT Hoves';
+   src: url('fonts/TTHoves-Medium.eot');
+   src: local('TT Hoves Medium'), local('TTHoves-Medium'),
+      url('fonts/TTHoves-Medium.eot?#iefix') format('embedded-opentype'),
+      url('fonts/TTHoves-Medium.woff2') format('woff2'),
+      url('fonts/TTHoves-Medium.woff') format('woff'),
+      url('fonts/TTHoves-Medium.ttf') format('truetype');
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'TT Hoves';
+   src: url('fonts/TTHoves-DemiBold.eot');
+   src: local('TT Hoves DemiBold'), local('TTHoves-DemiBold'),
+      url('fonts/TTHoves-DemiBold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/TTHoves-DemiBold.woff2') format('woff2'),
+      url('fonts/TTHoves-DemiBold.woff') format('woff'),
+      url('fonts/TTHoves-DemiBold.ttf') format('truetype');
+   font-weight: 600;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'TT Hoves';
+   src: url('fonts/TTHoves-Bold.eot');
+   src: local('TT Hoves Bold'), local('TTHoves-Bold'),
+      url('fonts/TTHoves-Bold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/TTHoves-Bold.woff2') format('woff2'),
+      url('fonts/TTHoves-Bold.woff') format('woff'),
+      url('fonts/TTHoves-Bold.ttf') format('truetype');
+   font-weight: bold;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'SF Pro Display';
+   src: url('fonts/SFProDisplay-Black.eot');
+   src: local('SF Pro Display Black'), local('SFProDisplay-Black'),
+      url('fonts/SFProDisplay-Black.eot?#iefix') format('embedded-opentype'),
+      url('fonts/SFProDisplay-Black.woff2') format('woff2'),
+      url('fonts/SFProDisplay-Black.woff') format('woff'),
+      url('fonts/SFProDisplay-Black.ttf') format('truetype');
+   font-weight: 900;
+   font-style: normal;
+}
+
 /*header - Ольга*/
 .header {
    display: grid;
@@ -172,8 +244,10 @@ li.text-muted>a:hover {
 }
 
 .about__title {
+   font-weight: 300;
+   font-style: normal;
+   font-size: 2.5em;
    color: #C4C4C4;
-   font-size: 1.5em;
 }
 
 .about_txt {
@@ -194,12 +268,10 @@ li.text-muted>a:hover {
 }
 
 .our-tasks__title {
-   font-family: "TT Hoves";
    font-weight: 300;
    font-style: normal;
    font-size: 2.5em;
    color: #C4C4C4;
-   margin-bottom: 30px;
 }
 
 .our-tasks__row {
@@ -209,15 +281,32 @@ li.text-muted>a:hover {
    gap: 20px;
 }
 
+.our-tasks__image {
+   font-weight: 900;
+   font-style: normal;
+   font-size: 200px;
+   color: #e9e5e5;
+   justify-content: left;
+}
+
+.our-tasks__text {
+   font-weight: normal;
+   font-style: normal;
+   font-size: 20px;
+}
+
 .our-tasks__first {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 0.5fr 1.5fr;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .our-tasks__second {
    display: grid;
-   grid-template-columns: 1fr 1fr;
-   font-size: 15px;
+   grid-template-columns: 0.5fr 1.5fr;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .our-projects {
@@ -228,7 +317,6 @@ li.text-muted>a:hover {
 }
 
 .our-projects__title {
-   font-family: "TT Hoves";
    font-weight: 300;
    font-style: normal;
    font-size: 2.5em;
@@ -275,9 +363,9 @@ li.text-muted>a:hover {
 }
 
 .centered>h4 {
-   font-weight: 700;
    font-weight: bold;
-   font-size: 2em;
+   font-style: normal;
+   font-size: 2.5em;
 }
 
 .our-projects__bottom {
