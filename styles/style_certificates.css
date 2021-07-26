@@ -1,0 +1,258 @@
+@font-face {
+   font-family: 'TT Hoves';
+   src: url('fonts/TTHoves-Light.eot');
+   src: local('TT Hoves Light'), local('TTHoves-Light'),
+      url('fonts/TTHoves-Light.eot?#iefix') format('embedded-opentype'),
+      url('fonts/TTHoves-Light.woff2') format('woff2'),
+      url('fonts/TTHoves-Light.woff') format('woff'),
+      url('fonts/TTHoves-Light.ttf') format('truetype');
+   font-weight: 300;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'TT Hoves';
+   src: url('fonts/TTHoves-Regular.eot');
+   src: local('TT Hoves Regular'), local('TTHoves-Regular'),
+      url('fonts/TTHoves-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/TTHoves-Regular.woff2') format('woff2'),
+      url('fonts/TTHoves-Regular.woff') format('woff'),
+      url('fonts/TTHoves-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'TT Hoves';
+   src: url('fonts/TTHoves-Medium.eot');
+   src: local('TT Hoves Medium'), local('TTHoves-Medium'),
+      url('fonts/TTHoves-Medium.eot?#iefix') format('embedded-opentype'),
+      url('fonts/TTHoves-Medium.woff2') format('woff2'),
+      url('fonts/TTHoves-Medium.woff') format('woff'),
+      url('fonts/TTHoves-Medium.ttf') format('truetype');
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'TT Hoves';
+   src: url('fonts/TTHoves-DemiBold.eot');
+   src: local('TT Hoves DemiBold'), local('TTHoves-DemiBold'),
+      url('fonts/TTHoves-DemiBold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/TTHoves-DemiBold.woff2') format('woff2'),
+      url('fonts/TTHoves-DemiBold.woff') format('woff'),
+      url('fonts/TTHoves-DemiBold.ttf') format('truetype');
+   font-weight: 600;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'TT Hoves';
+   src: url('fonts/TTHoves-Bold.eot');
+   src: local('TT Hoves Bold'), local('TTHoves-Bold'),
+      url('fonts/TTHoves-Bold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/TTHoves-Bold.woff2') format('woff2'),
+      url('fonts/TTHoves-Bold.woff') format('woff'),
+      url('fonts/TTHoves-Bold.ttf') format('truetype');
+   font-weight: bold;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'SF Pro Display';
+   src: url('fonts/SFProDisplay-Black.eot');
+   src: local('SF Pro Display Black'), local('SFProDisplay-Black'),
+      url('fonts/SFProDisplay-Black.eot?#iefix') format('embedded-opentype'),
+      url('fonts/SFProDisplay-Black.woff2') format('woff2'),
+      url('fonts/SFProDisplay-Black.woff') format('woff'),
+      url('fonts/SFProDisplay-Black.ttf') format('truetype');
+   font-weight: 900;
+   font-style: normal;
+}
+
+/* 
+
+@media screen and (max-width: 360px) {}
+@media screen and (min-width: 361px) and (max-width: 1023px) {}
+@media screen and (min-width: 1024px) {}*/
+
+
+
+.container {
+   display: grid;
+   width: 100vw;
+   justify-content: center;
+}
+
+
+.header {
+   display: grid;
+   width: 100vw;
+   justify-content: center;
+}
+
+.header__body {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   justify-content: center;
+   align-items: center;
+   max-width: 80vw;
+   height: 10vh;
+}
+
+.header__logo {
+   justify-content: center;
+   align-items: center;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+.header__nav {
+   display: grid;
+   font-size: 18px;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   grid-template-areas:
+      "header__boss header__gallery header__projects header__certificates header__contacts";
+   justify-content: start;
+   align-items: center;
+   gap: 4vw;
+}
+
+.certificates {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   flex: 1 1 auto;
+   margin-top: 100px;
+}
+
+.certificates__body {
+   width: 70vw;
+}
+
+.title1 {
+   font-weight: 300;
+   font-style: normal;
+   font-size: 64px;
+   color: #BDBDBD;
+}
+
+.title2 {
+   font-weight: bold;
+   font-style: normal;
+   font-size: 64px;
+   color: black;
+}
+
+.certificates__row {
+   display: flex;
+   justify-content: space-between;
+   margin: 90px auto;
+}
+
+.certificates__image {
+   margin: 30px;
+}
+
+.certificates__buttons-row {
+   display: flex;
+   justify-content: flex-end;
+   margin-bottom: 130px;
+}
+
+.certificates__buttons-body {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 10px;
+}
+
+.start,
+.end,
+.left,
+.right {
+   height: 53px;
+   width: 53px;
+   border: 0px;
+   background-color: transparent;
+}
+
+.end {
+   color: #BDBDBD;
+}
+
+.left,
+.right {
+   border: 1px solid #F2F2F2;
+   background-color: transparent;
+}
+
+.right {
+   background-color: #F9F9F9;
+}
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   background-color: #2C2C2C;
+   color: #FFFFFF;
+   width: 100%;
+
+}
+
+a.link {
+   color: #FFFFFF;
+}
+
+.footer__body {
+   display: flex;
+   justify-content: space-between;
+   padding: 30px;
+   width: 80%;
+}
+
+
+.footer__logo {
+   justify-content: start;
+   align-items: start;
+}
+
+.footer__information {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 110px;
+   height: 220px;
+}
+
+.footer__contacts {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 200px;
+}
+
+.footer__social {
+   width: 193px;
+}
+
+.footer__social-wrapper {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 30px;
+}
+
+.footer__bottom {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 16px;
+   color: #414141;
+   padding: 10px 0px;
+}
