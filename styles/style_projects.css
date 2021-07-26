@@ -1,3 +1,7 @@
+body {
+    font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
+}
+
 .header {
     display: grid;
     max-width: 100%;
@@ -70,14 +74,16 @@ li.text-muted>a:hover {
     color: #7A7A7A;
 }
 
-.projects__title {
-    font-size: 2.5em;
-    margin-left: 8%;
+h1 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 64px;
+    color: #BDBDBD;
 }
 
-.projects__title-transparent {
-    color: #C4C4C4;
-    font-weight: normal;
+.bold {
+    font-weight: bold;
+    color: black;
 }
 
 .school__row {
@@ -602,3 +608,4 @@ a.link {
     .footer__bottom-min361px {
         display: none;
     }
+}
