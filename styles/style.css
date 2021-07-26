@@ -2,6 +2,13 @@ body {
    font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
 }
 
+h2 {
+   font-weight: 300;
+   font-style: normal;
+   font-size: 64px;
+   color: #BDBDBD;
+}
+
 /*header - Ольга*/
 .header {
    display: grid;
@@ -26,6 +33,9 @@ a {
 }
 
 .header__nav {
+   font-weight: normal;
+   font-style: normal;
+   font-size: 12px;
    grid-area: header__nav;
    display: grid;
    grid-template-columns: repeat(5, 1fr);
@@ -35,10 +45,6 @@ a {
    justify-content: start;
    align-items: center;
    gap: 2vw;
-   font-family: "TT Hoves";
-   font-weight: 400;
-   font-style: normal;
-   font-size: 2vw;
 }
 
 .header__boss {
@@ -178,13 +184,6 @@ h1 {
    margin-right: 5%;
 }
 
-.about__title {
-   font-weight: 300;
-   font-style: normal;
-   font-size: 2.5em;
-   color: #C4C4C4;
-}
-
 .about_txt {
    font-size: 1.5em;
 }
@@ -200,13 +199,6 @@ h1 {
    width: 100vw;
    max-width: 1170px;
    justify-content: center;
-}
-
-.our-tasks__title {
-   font-weight: 300;
-   font-style: normal;
-   font-size: 2.5em;
-   color: #C4C4C4;
 }
 
 .our-tasks__row {
@@ -227,7 +219,7 @@ h1 {
 .our-tasks__text {
    font-weight: normal;
    font-style: normal;
-   font-size: 20px;
+   font-size: 22px;
 }
 
 .our-tasks__first {
@@ -249,13 +241,6 @@ h1 {
    max-width: 1170px;
    grid-area: our-projects;
    margin: 100px auto 20px;
-}
-
-.our-projects__title {
-   font-weight: 300;
-   font-style: normal;
-   font-size: 2.5em;
-   color: #C4C4C4;
 }
 
 .our-projects__row {
@@ -323,7 +308,14 @@ h1 {
    grid-area: content__grid;
    grid-template-columns: 1fr;
    justify-items: center;
-   margin: 5% auto 5%;
+   margin: 5% auto;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 14px;
+}
+
+.content__grid__btn-row {
+   margin-top: 10px;
 }
 
 .border_style {
@@ -336,6 +328,16 @@ h1 {
    display: grid;
    background-color: #2C2C2C;
    color: #FFFFFF;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 14px;
+}
+
+.title1,
+.title2,
+.title3 {
+   font-weight: bold;
+   font-size: 16px;
 }
 
 a.link {
