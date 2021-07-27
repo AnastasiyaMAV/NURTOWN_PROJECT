@@ -18,72 +18,7 @@
     grid-template-rows: 1fr;
     grid-template-areas: "header__logo header__nav";
     padding: 5vh;
-    /*border: solid 3px #f71313;*/
 }
-
-/*
-.header__logo {
-    grid-area: header__logo;
-    display: grid;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.header__nav {
-    grid-area: header__nav;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "header__boss header__gallery header__projects header__sertificates header__contacts";
-    justify-content: start;
-    align-items: center;
-    gap: 4vw;
-    font-family: "TT Hoves";
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2vw;
-}
-
-.header__boss {
-    grid-area: header__boss;
-}
-
-.header__gallery {
-    grid-area: header__gallery;
-}
-
-.header__projects {
-    grid-area: header__projects;
-}
-
-.header__sertificates {
-    grid-area: header__sertificates;
-}
-
-.header__contacts {
-    grid-area: header__contacts;
-}
-
-ul.header__link-max768 {
-    align-items: center;
-}
-
-li.text-muted>a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-li.text-muted>a:hover {
-    text-decoration: none;
-    color: #7A7A7A;
-}*/
 
 .border_style {
     border-radius: 0px;
@@ -104,157 +39,13 @@ li.text-muted>a:hover {
     font-style: normal;
     color: #FFFFFF;
     margin-top: 10vw;
-    /*border: solid 3px #f71313;*/
 }
-
-/*
-a.link {
-    color: #FFFFFF;
-}
-
-.footer__top {
-    display: grid;
-    padding: 8vh;
-    grid-template-columns: 1fr 1fr 1.5fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "footer__logo footer__information footer__contacts footer__social";
-}
-
-.footer__logo {
-    display: grid;
-    grid-area: footer__logo;
-    justify-content: start;
-    align-items: start;
-}
-
-.footer__information {
-    display: grid;
-    grid-area: footer__information;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "title1"
-        "footer__boss"
-        "footer__gallery"
-        "footer__projects "
-        "footer__sertificates"
-        "footer__contact";
-    gap: 20px;
-}
-
-.title1 {
-    grid-area: title1;
-}
-
-.footer__boss {
-    grid-area: footer__boss;
-}
-
-.footer__gallery {
-    grid-area: footer__gallery;
-}
-
-.footer__projects {
-    grid-area: footer__projects;
-}
-
-.footer__sertificates {
-    grid-area: footer__sertificates;
-}
-
-.footer__contact {
-    grid-area: footer__contact;
-}
-
-.footer__contacts {
-    display: grid;
-    grid-area: footer__contacts;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "title2"
-        "footer__location"
-        "."
-        "footer__phone"
-        "footer__mail";
-}
-
-.title2 {
-    grid-area: title2;
-}
-
-.footer__location {
-    grid-area: footer__location;
-}
-
-.footer__phone {
-    grid-area: footer__phone;
-}
-
-.footer__mail {
-    grid-area: footer__mail;
-}
-
-.footer__social {
-    grid-area: footer__social;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10% 1fr;
-    grid-template-areas: "title3"
-        "footer__social-wrapper";
-    justify-content: start;
-    gap: 20px;
-}
-
-.title3 {
-    grid-area: title3;
-}
-
-.footer__social-wrapper {
-    display: grid;
-    grid-area: footer__social-wrapper;
-    max-width: 195px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: "footer__facebook footer__twitter footer__linked footer__pinterest";
-}
-
-.footer__facebook {
-    grid-area: footer__facebook;
-}
-
-.footer__twitter {
-    grid-area: footer__twitter;
-}
-
-.footer__linked {
-    grid-area: footer__linked;
-}
-
-.footer__pinterest {
-    grid-area: footer__pinterest;
-}
-
-.footer__line {
-    border: solid 1px #414141;
-    width: 99%;
-    color: #414141;
-    height: 0.3%;
-}
-
-.footer__bottom {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    color: #414141;
-    padding: 2%;
-}
-*/
 
 @media screen and (max-width: 360px) {
     .container__grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 30% 1fr;
+        grid-template-rows: 25% 1fr;
         grid-template-areas:
             "header__grid"
             "content__grid";
@@ -485,7 +276,7 @@ a.link {
     .container__grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 16% 1fr 1fr;
+        grid-template-rows: 10% 0.5fr 0.5fr;
         grid-template-areas:
             "header__grid"
             "content__grid"
