@@ -1,3 +1,5 @@
+@import url(style_header_footer.css);
+
 .container__grid {
     font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
     display: grid;
@@ -19,6 +21,7 @@
     /*border: solid 3px #f71313;*/
 }
 
+/*
 .header__logo {
     grid-area: header__logo;
     display: grid;
@@ -80,40 +83,15 @@ li.text-muted>a {
 li.text-muted>a:hover {
     text-decoration: none;
     color: #7A7A7A;
-}
+}*/
 
 .border_style {
     border-radius: 0px;
 }
 
-h1 {
-    font-weight: 300;
-    font-style: normal;
-    font-size: 4vw;
-    color: #BDBDBD;
-}
-
 .bold {
     font-weight: bold;
     color: black;
-}
-
-.content__style_3 {
-    font-weight: bold;
-    font-style: normal;
-    font-size: 18px;
-}
-
-.content__style_4 {
-    font-weight: 300;
-    font-style: normal;
-    font-size: 16px;
-}
-
-.content__style_5 {
-    font-weight: normal;
-    font-style: normal;
-    font-size: 12px;
 }
 
 .footer__grid {
@@ -129,6 +107,7 @@ h1 {
     /*border: solid 3px #f71313;*/
 }
 
+/*
 a.link {
     color: #FFFFFF;
 }
@@ -269,6 +248,7 @@ a.link {
     color: #414141;
     padding: 2%;
 }
+*/
 
 @media screen and (max-width: 360px) {
     .container__grid {
@@ -658,9 +638,24 @@ a.link {
         display: grid;
         grid-area: content__grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 20% 0.5fr 1fr;
+        grid-template-rows: 1fr;
         justify-items: center;
         align-items: center;
+    }
+
+    .header__nav {
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2vw;
+        grid-area: header__nav;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "header__boss header__gallery header__projects header__sertificates header__contacts";
+        justify-content: start;
+        align-items: center;
+        gap: 2vw;
     }
 
     .header-max768 {
@@ -749,6 +744,46 @@ a.link {
 
     .header-max768 {
         display: none;
+    }
+
+    .header__nav {
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2vw;
+        grid-area: header__nav;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "header__boss header__gallery header__projects header__sertificates header__contacts";
+        justify-content: start;
+        align-items: center;
+        gap: 2vw;
+    }
+
+    h1 {
+        font-weight: 300;
+        font-style: normal;
+        font-size: 4vw;
+        color: #BDBDBD;
+    }
+
+    .content__style_3 {
+        font-weight: bold;
+        font-style: normal;
+        font-size: 18px;
+    }
+
+    .content__style_4 {
+        font-weight: 300;
+        font-style: normal;
+        font-size: 16px;
+    }
+
+    .content__style_5 {
+        font-weight: normal;
+        font-style: normal;
+        font-size: 12px;
     }
 
     .map_style {
