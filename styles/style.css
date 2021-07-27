@@ -1,3 +1,5 @@
+@import url(style_header_footer.css);
+
 body {
    font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
 }
@@ -10,7 +12,7 @@ h2 {
 }
 
 /*header - Ольга*/
-.header {
+/*.header {
    display: grid;
    max-width: 100%;
    grid-template-columns: 1fr 2fr;
@@ -79,7 +81,7 @@ li.text-muted>a {
 li.text-muted>a:hover {
    text-decoration: none;
    color: #7A7A7A;
-}
+}*/
 
 /*article: introduction и about - Лариса*/
 .introduction {
@@ -360,7 +362,7 @@ h1 {
 }
 
 /*footer - Ольга*/
-.footer {
+/*.footer {
    display: grid;
    background-color: #2C2C2C;
    color: #FFFFFF;
@@ -515,7 +517,7 @@ a.link {
    font-size: 16px;
    color: #414141;
    padding: 2%;
-}
+}*/
 
 @media screen and (max-width: 360px) {
    .header {
