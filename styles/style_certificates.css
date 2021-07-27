@@ -7,11 +7,8 @@
 
 
 
-.container {
+body {
    font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
-   display: grid;
-   width: 100vw;
-   justify-content: center;
 }
 
 
@@ -56,12 +53,7 @@ a {
    display: flex;
    justify-content: center;
    width: 100%;
-   flex: 1 1 auto;
    margin-top: 100px;
-}
-
-.certificates__body {
-   width: 70vw;
 }
 
 h1 {
@@ -78,12 +70,9 @@ h1 {
 
 .certificates__row {
    display: flex;
-   justify-content: space-between;
-   margin: 90px auto;
-}
-
-.certificates__image {
-   margin: 30px;
+   justify-content: space-around;
+   width: 80vw;
+   margin: 90px 0;
 }
 
 .pagination {
@@ -95,7 +84,6 @@ h1 {
 .pagination__body {
    display: flex;
    justify-content: space-between;
-   margin: 0 10px;
 }
 
 .start,
@@ -129,20 +117,28 @@ h1 {
    }
 
    h1 {
-      font-size: 10vw;
+      font-size: 8vw;
    }
 
    .certificates__row {
+      flex-direction: column;
+      width: 100vw;
+   }
+
+   .certificates__body {
+      text-align: center;
+   }
+
+   .pagination {
       display: grid;
       justify-content: center;
-      margin: 90px auto;
    }
 
    .footer {
       display: none;
    }
-}
 
+}
 
 @media screen and (min-width: 361px) and (max-width: 499px) {
    .header {
@@ -150,18 +146,26 @@ h1 {
    }
 
    h1 {
-      font-size: 10vw;
+      font-size: 8vw;
    }
 
    .certificates__row {
+      flex-direction: column;
+      max-width: 350px;
+   }
+
+   .certificates__body {
+      text-align: center;
+   }
+
+   .pagination {
       display: grid;
       justify-content: center;
-      margin: 90px auto;
    }
 
    .footer__top {
       display: grid;
-      padding: 8vh;
+      padding: 2vh;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 0.5fr 1fr;
       grid-template-areas: "footer__logo footer__logo footer__logo"
@@ -192,6 +196,7 @@ h1 {
    }
 
    .title2-min361px {
+      font-size: 16px;
       grid-area: title2-min361px;
    }
 
@@ -245,13 +250,20 @@ h1 {
    }
 
    h1 {
-      font-size: 10vw;
+      font-size: 8vw;
    }
 
    .certificates__row {
+      flex-direction: column;
+   }
+
+   .certificates__body {
+      text-align: center;
+   }
+
+   .pagination {
       display: grid;
       justify-content: center;
-      margin: 90px auto;
    }
 
    .footer__top {
@@ -346,11 +358,16 @@ h1 {
    }
 
    .certificates__row {
+      flex-direction: column;
+   }
+
+   .certificates__body {
+      text-align: center;
+   }
+
+   .pagination {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-template-rows: repeat(1, 1fr);
-      gap: 20px;
-      margin: 90px auto;
+      justify-content: center;
    }
 
    .footer__contacts-min361px {
