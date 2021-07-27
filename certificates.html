@@ -15,8 +15,43 @@
 </head>
 
 
-<body class="container">
+<body>
     <header class="header">
+        <div class="header__logo"><img src="images/logo.png" alt="logo"></div>
+        <div class="header__nav">
+            <div class="header__boss"><a href="index.html">
+                    <hr>ГЛАВНАЯ
+                    <hr></a></div>
+            <div class="header__gallery"><a href="gallery.html">ГАЛЕРЕЯ</a></div>
+            <div class="header__projects"><a href="projects.html">ПРОЕКТЫ</a></div>
+            <div class="header__sertificates"><a href="certificates.html">СЕРТИФИКАТЫ</a></div>
+            <div class="header__contacts"><a href="contact_Info.html">КОНТАКТЫ</a></div>
+        </div>
+    </header>
+
+    <header class="header-max768">
+        <div class="collapse text-right text-decoration-none" id="navbarToggleExternalContent">
+            <div class="p-4" style="background-color: #414141;">
+                <ul class="header__link-max768 list-unstyled">
+                    <li class="text-muted"><a href="index.html">ГЛАВНАЯ</a></li>
+                    <li class="text-muted"><a href="gallery.html">ГАЛЕРЕЯ</a></li>
+                    <li class="text-muted"><a href="projects.html">ПРОЕКТЫ</a></li>
+                    <li class="text-muted"><a href="#">СЕРТИФИКАТЫ</a></li>
+                    <li class="text-muted"><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark" style="background-color: #414141;">
+            <div class="header__logo-max768"><img src="images/logo-footer.png" alt="logo" width="90"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- <header class="header">
         <div class="header__body">
             <div class="header__logo"><img src="images/logo.png" alt="logo"></div>
             <div class="header__nav">
@@ -31,7 +66,7 @@
                 <div class="header__contacts"><a href="contact_Info.html">КОНТАКТЫ</a></div>
             </div>
         </div>
-    </header>
+    </header> -->
 
     <main class="certificates">
         <article class="certificates__body">
@@ -54,7 +89,56 @@
             </div>
         </article>
     </main>
+
     <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__logo"><img src="images/logo-footer.png" alt="logo-footer"></div>
+            <div class="footer__information">
+                <a href="#" class="title1 link">Информация</a>
+                <a href="#" class="footer__boss link">Главная</a>
+                <a href="gallery.html" class="footer__gallery link">Галерея</a>
+                <a href="#" class="footer__projects link">Проекты</a>
+                <a href="#" class="footer__sertificates link">Сертификаты</a>
+                <a href="#" class="footer__contact link">Контакты</a>
+            </div>
+            <div class="footer__contacts">
+                <span class="title2">Контакты</span>
+                <div class="footer__location">
+                    <p><img src="images/geoloc.png" alt="geoloc">
+                        &nbsp;&nbsp;&nbsp;100000, Республика Казахстан,<br> г. Караганда, ул. Телевизионная 10</p>
+                </div>
+                <div class="footer__phone"><img src="images/phone.png" alt="phone">
+                    <span>&nbsp;&nbsp;&nbsp;+7 (701) 77 76 811</span></div>
+                <div class="footer__mail"><img src="images/mail.png"
+                        alt="mail"><span>&nbsp;&nbsp;&nbsp;Galym.sultanov@mail.ru</span></div>
+            </div>
+            <div class="footer__contacts-min361px">
+                <span class="title2-min361px">Контакты</span>
+                <div class="footer__phone-min361px"><a href="tel:+77017776811" class="btn btn-min361px"><img
+                            src="images/phone.png" alt="phone"></a></div>
+                <div class="footer__mail-min361px"><a href="mailto:Galym.sultanov@mail.ru" class="btn btn-min361px"><img
+                            src="images/mail.png" alt="mail"></a></div>
+            </div>
+            <div class="footer__social">
+                <div><span class="title3">Социальные сети</span></div>
+                <div class="footer__social-wrapper">
+                    <a href="#" class="footer__facebook"><img src="images/facebook.png" alt="facebook"></a>
+                    <a href="#" class="footer__twitter"><img src="images/twitter.png" alt="twitter"></a>
+                    <a href="#" class="footer__linked"><img src="images/linked.png" alt="linked"></a>
+                    <a href="#" class="footer__pinterest"><img src="images/pinterest.png" alt="pinterest"></a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer__line">
+        <div class="footer__bottom">
+            <span class="footer__copyright">&copy;&nbsp;2019 Digital Project. Все права защищены.</span>
+        </div>
+        <div class="footer__bottom-min361px">
+            <span class="footer__copyright">Digital Project&copy;2019</span>
+        </div>
+    </footer>
+
+    <!-- <footer class="footer">
         <div class="footer__body">
             <div class="footer__logo"><img src="images/logo-footer.png" alt="logo-footer"></div>
             <div class="footer__information">
@@ -87,7 +171,7 @@
         <div class="footer__bottom">
             <div class="footer__text">&copy;&nbsp;2019 Digital Project. Все права защищены.</div>
         </div>
-    </footer>
+    </footer> -->
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
