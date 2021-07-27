@@ -108,6 +108,41 @@ h1 {
    color: black;
 }
 
+.pagination-main {
+   display: flex;
+   flex-direction: column;
+   margin: 100px 0px 130px;
+}
+
+.arrows {
+   margin-bottom: 90px;
+}
+
+.start,
+.end,
+.left,
+.right {
+   height: 53px;
+   width: 53px;
+   border: 0px;
+   background-color: transparent;
+}
+
+.end {
+   color: #BDBDBD;
+}
+
+.left,
+.right {
+   border: 1px solid #F2F2F2;
+   background-color: transparent;
+}
+
+.right {
+   background-color: #F9F9F9;
+   margin-left: 20px;
+}
+
 .introduction__slider {
    grid-area: introduction__slider;
 }
@@ -208,7 +243,8 @@ h1 {
    gap: 20px;
 }
 
-.our-tasks__image {
+.our-tasks__digit {
+   font-family: 'SF Pro Display';
    font-weight: 900;
    font-style: normal;
    font-size: 200px;

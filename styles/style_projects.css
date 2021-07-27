@@ -34,10 +34,9 @@ a {
     justify-content: start;
     align-items: center;
     gap: 2vw;
-    font-family: "TT Hoves";
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
-    font-size: 2vw;
+    font-size: 12px;
 }
 
 .header__boss {
@@ -119,7 +118,9 @@ img {
 }
 
 .txt {
-    font-size: 1.1em;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
 }
 
 .white-button {
@@ -132,8 +133,10 @@ img {
 }
 
 .title {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 40px;
     color: #C4C4C4;
-    font-size: 1.5em;
 }
 
 .parking__row {
@@ -187,6 +190,44 @@ img {
     grid-area: office__col_second;
     display: grid;
 }
+
+/*начало кода кнопок*/
+.pagination {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 130px;
+}
+
+.pagination__body {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.start,
+.end,
+.left,
+.right {
+    height: 53px;
+    width: 53px;
+    border: 0px;
+    background-color: transparent;
+}
+
+.end {
+    color: #BDBDBD;
+}
+
+.left,
+.right {
+    border: 1px solid #F2F2F2;
+    background-color: transparent;
+}
+
+.right {
+    background-color: #F9F9F9;
+}
+
 
 .footer {
     display: grid;

@@ -91,13 +91,21 @@ h1 {
    color: black;
 }
 
+/*добавила эти значения к твоему классу чтобы кнопки стояли где нужно, не съезжали к краю.(и заголовок, кстати, тоже починился)*/
+.gallery {
+   display: grid;
+   width: 100vw;
+   justify-content: center;
+}
+
 .gallery__list {
    display: grid;
    grid-template-columns: repeat(5, 1fr);
    grid-template-rows: repeat(2, 1fr);
    align-items: start;
+   width: 80vw;
    grid-gap: 15px;
-   margin: 10%;
+   margin: 10% auto;
 }
 
 .gallery__img {
@@ -106,6 +114,44 @@ h1 {
    object-fit: cover;
    display: block;
 }
+
+/*начало кода кнопок*/
+.pagination {
+   display: flex;
+   justify-content: flex-start;
+   margin-bottom: 130px;
+}
+
+.pagination__body {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 10px;
+}
+
+.start,
+.end,
+.left,
+.right {
+   height: 53px;
+   width: 53px;
+   border: 0px;
+   background-color: transparent;
+}
+
+.end {
+   color: #BDBDBD;
+}
+
+.left,
+.right {
+   border: 1px solid #F2F2F2;
+   background-color: transparent;
+}
+
+.right {
+   background-color: #F9F9F9;
+}
+
 
 /*footer - Ольга*/
 .footer {
