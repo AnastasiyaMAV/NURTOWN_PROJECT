@@ -23,9 +23,6 @@ h4 {
     color: black;
 }
 
-.main {
-    /*background-color: blueviolet;*/
-}
 
 .content {
     width: 90vw;
@@ -91,7 +88,7 @@ h4 {
 
 .parking__row {
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "parking__col_first parking__col_second";
     justify-content: center;
@@ -109,12 +106,12 @@ h4 {
 .parking__col_second {
     grid-area: parking__col_second;
     display: grid;
-    padding-left: 4%;
+    padding: 4%;
 }
 
 .office__row {
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "office__col_first office__col_second";
     justify-content: center;
@@ -133,7 +130,7 @@ h4 {
 .office__col_second {
     grid-area: office__col_second;
     display: grid;
-    padding-left: 4%;
+    padding: 4%;
 }
 
 /*начало кода кнопок*/
