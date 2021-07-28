@@ -11,16 +11,18 @@
     <link rel="stylesheet" href="styles/style_fonts.css">
     <link rel="stylesheet" href="styles/style_projects.css">
 </head>
-
-<body>
+<!-- Здесь был контейнер который уменьшал хедер. Убрала его-->
+<body> 
     <header class="header">
         <div class="header__logo"><img src="images/logo.png" alt="logo"></div>
         <div class="header__nav">
             <div class="header__boss"><a href="index.html">
                     ГЛАВНАЯ
-                    </a></div>
+                </a></div>
             <div class="header__gallery"><a href="gallery.html">ГАЛЕРЕЯ</a></div>
-            <div class="header__projects"><a href="projects.html"><hr>ПРОЕКТЫ<hr></a></div>
+            <div class="header__projects"><a href="projects.html">
+                    <hr>ПРОЕКТЫ
+                    <hr></a></div>
             <div class="header__sertificates"><a href="certificates.html">СЕРТИФИКАТЫ</a></div>
             <div class="header__contacts"><a href="contact_Info.html">КОНТАКТЫ</a></div>
         </div>
@@ -48,9 +50,15 @@
         </nav>
     </header>
 
-    <main class="main">
+    <main>
+        <!-- Сделала обертку чтобы ширину блока сделать 90vw по отношению к body и main, которые 100vw.
+            Четко разделила все внутри row на самостоятельные блоки. первая колонка как у тебя и было - картинка.
+            Вторая колонка див school__txt с заголовком h4 и текстом и див button с кнопкой, чтобы адаптивность текста не влияла на кнопку.
+        Дала заголовку класс чтобы ставить его посередине в мелких размерах.-->
         <div class="content">
-            <div class="title"><h1>НАШИ<br><span class="bold">ПРОЕКТЫ</span></h1></div>
+            <div class="content__title">
+                <h1>НАШИ<br><span class="bold">ПРОЕКТЫ</span></h1>
+            </div>
             <article class="school">
                 <div class="school__row">
                     <div class="school__col_first">

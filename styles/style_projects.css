@@ -4,7 +4,6 @@ body {
     font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
 }
 
-
 h1 {
     font-weight: 300;
     font-style: normal;
@@ -12,18 +11,12 @@ h1 {
     color: #BDBDBD;
 }
 
-h4 {
-    font-weight: 300;
-    font-style: normal;
-    font-size: 40px;
-}
-
 .bold {
     font-weight: bold;
     color: black;
 }
 
-
+/*Обертка установила ширину и дала отступы по бокам чтобы стоять четко посередине*/
 .content {
     width: 90vw;
     margin: 20px auto;
@@ -32,6 +25,7 @@ h4 {
 .school__row {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /*Колонки поставила не в процентах*/
     grid-template-rows: 1fr;
     grid-template-areas: "school__col_first school__col_second";
     justify-content: center;
@@ -52,6 +46,7 @@ h4 {
     justify-content: start;
     align-content: space-around;
     padding: 4%;
+    /*Паддинг был левый, поставила общий*/
 }
 
 img {
@@ -71,9 +66,6 @@ img {
     background-color: white;
     max-width: 50%;
     margin-bottom: 5%;
-
-
-
 }
 
 h4 {
@@ -323,8 +315,11 @@ a.link {
         display: none;
     }
 
-    .txt {
+    .content__title {
+        text-align: center;
+    }
 
+    .txt {
         font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
 
     }
@@ -345,8 +340,6 @@ a.link {
     .school__col_second {
         align-content: center;
     }
-
-
 
     .parking__row {
         display: grid;
@@ -381,6 +374,10 @@ a.link {
         display: none;
     }
 
+    .pagination {
+        justify-content: center;
+    }
+
     .footer {
         display: none;
     }
@@ -390,6 +387,10 @@ a.link {
 @media screen and (min-width: 361px) and (max-width: 499px) {
     .header {
         display: none;
+    }
+
+    .content__title {
+        text-align: center;
     }
 
     .txt {
@@ -446,6 +447,10 @@ a.link {
         display: none;
     }
 
+    .pagination {
+        justify-content: center;
+    }
+
     .footer {
         display: none;
     }
@@ -454,6 +459,10 @@ a.link {
 @media screen and (min-width: 500px) and (max-width: 768px) {
     .header {
         display: none;
+    }
+
+    .content__title {
+        text-align: center;
     }
 
     .txt {
@@ -495,6 +504,10 @@ a.link {
 
     .content-image__contact {
         max-width: 45%;
+    }
+
+    .pagination {
+        justify-content: center;
     }
 
     .footer__top {
