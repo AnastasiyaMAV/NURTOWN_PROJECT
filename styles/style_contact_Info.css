@@ -13,18 +13,6 @@ body {
     color: black;
 }
 
-.footer__grid {
-    display: grid;
-    grid-area: footer__grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    background-color: #2C2C2C;
-    font-weight: 400;
-    font-style: normal;
-    color: #FFFFFF;
-    margin-top: 10vw;
-}
-
 @media screen and (max-width: 360px) {
     .header {
         display: none;
@@ -83,10 +71,10 @@ body {
     .map_style {
         width: 70%;
         height: 50%;
-        margin-bottom: 20vw;
+        margin-bottom: 10vw;
     }
 
-    .footer__grid {
+    .footer {
         display: none;
     }
 
@@ -151,10 +139,9 @@ body {
         height: 50%;
     }
 
-    .footer__grid {
+    .footer {
         display: none;
     }
-
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
