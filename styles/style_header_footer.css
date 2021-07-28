@@ -23,7 +23,7 @@ a {
 .header__nav {
     font-weight: normal;
     font-style: normal;
-    font-size: 12px;
+    font-size: 2vw;
     grid-area: header__nav;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
