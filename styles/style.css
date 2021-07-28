@@ -596,14 +596,24 @@ a.link {
 
    .back-btn {
       text-decoration: none;
-      padding: 0.5%;
+      padding: 1.5%;
       border: solid 1px #414141;
+      opacity: 20%;
       position: relative;
-      left: 70%;
+      left: 55%;
+      margin-bottom: 2%;
    }
 
    .back-btn:hover {
       background-color: #585c61;
+      opacity: 120%;
+      color: #F2F2F2;
+   }
+
+   a.back-top:hover {
+      text-decoration: none;
+      list-style: none;
+      color: white;
    }
 
    .footer {
@@ -689,14 +699,24 @@ a.link {
 
    .back-btn {
       text-decoration: none;
-      padding: 0.5%;
+      padding: 1.5%;
       border: solid 1px #414141;
+      opacity: 20%;
       position: relative;
-      left: 70%;
+      left: 55%;
+      margin-bottom: 2%;
    }
 
    .back-btn:hover {
       background-color: #585c61;
+      opacity: 120%;
+      color: #F2F2F2;
+   }
+
+   a.back-top:hover {
+      text-decoration: none;
+      list-style: none;
+      color: white;
    }
 
    .footer__top {
