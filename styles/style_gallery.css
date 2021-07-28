@@ -82,11 +82,11 @@ h1 {
          'header__area'
          'content__area';
    }
-   
+
    header {
       grid-area: header__area;
    }
-   
+
    article {
       grid-area: content__area;
    }
@@ -133,11 +133,11 @@ h1 {
          'content__area'
          'footer__area';
    }
-   
+
    header {
       grid-area: header__area;
    }
-   
+
    article {
       grid-area: content__area;
    }
@@ -262,11 +262,11 @@ h1 {
          'content__area'
          'footer__area';
    }
-   
+
    header {
       grid-area: header__area;
    }
-   
+
    article {
       grid-area: content__area;
    }
@@ -393,11 +393,11 @@ h1 {
          'content__area'
          'footer__area';
    }
-   
+
    header {
       grid-area: header__area;
    }
-   
+
    article {
       grid-area: content__area;
    }
@@ -449,38 +449,38 @@ h1 {
 @media screen and (min-width: 1024px) {
 
    .gallery__grid {
-   font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
-   display: grid;
-   width: 100%;
-   grid-template-columns: 1fr;
-   grid-template-rows: 15% 1fr 40%;
-   grid-template-areas:
-      'header__area'
-      'content__area'
-      'footer__area';
-}
+      font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 15% 1fr 40%;
+      grid-template-areas:
+         'header__area'
+         'content__area'
+         'footer__area';
+   }
 
-header {
-   grid-area: header__area;
-}
+   header {
+      grid-area: header__area;
+   }
 
-article {
-   grid-area: content__area;
-}
+   article {
+      grid-area: content__area;
+   }
 
-.footer {
-   grid-area: footer__area;
-}
+   .footer {
+      grid-area: footer__area;
+   }
 
-.gallery__list {
-   display: grid;
-   grid-template-columns: repeat(5, 1fr);
-   grid-template-rows: repeat(2, 1fr);
-   align-items: start;
-   width: 80vw;
-   grid-gap: 15px;
-   margin: 10% auto;
-}
+   .gallery__list {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      align-items: start;
+      width: 80vw;
+      grid-gap: 15px;
+      margin: 10% auto;
+   }
 
    .header-max768 {
       display: none;

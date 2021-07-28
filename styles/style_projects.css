@@ -12,14 +12,29 @@ h1 {
     color: #BDBDBD;
 }
 
+h4 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 40px;
+}
+
 .bold {
     font-weight: bold;
     color: black;
 }
 
+.main {
+    /*background-color: blueviolet;*/
+}
+
+.content {
+    width: 90vw;
+    margin: 20px auto;
+}
+
 .school__row {
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "school__col_first school__col_second";
     justify-content: center;
@@ -27,7 +42,6 @@ h1 {
     background-color: rgba(239, 239, 240, 0.445);
     grid-area: school__row;
     margin-bottom: 5%;
-    background-repeat: repeat-x;
 }
 
 .school__col_first {
@@ -40,7 +54,7 @@ h1 {
     display: grid;
     justify-content: start;
     align-content: space-around;
-    padding-left: 4%;
+    padding: 4%;
 }
 
 img {
@@ -53,8 +67,6 @@ img {
     font-style: normal;
     font-size: calc(12px + 4 * (100vw / 1440));
     display: block;
-    padding: 2% 2% 2% 2%;
-
 }
 
 .white-button {
@@ -62,6 +74,7 @@ img {
     background-color: white;
     max-width: 50%;
     margin-bottom: 5%;
+
 
 
 }
@@ -133,7 +146,7 @@ h4 {
 .pagination__body {
     display: flex;
     justify-content: space-between;
-    margin: 0 10px;
+    margin: 10px 0;
 }
 
 .start,

@@ -699,7 +699,11 @@ a.link {
       background-color: #585c61;
    }
 
-   .footer__top {
+   .footer {
+      display: none;
+   }
+
+   /*.footer__top {
       display: grid;
       padding: 8vh;
       grid-template-columns: 1fr 1fr 1fr;
@@ -776,7 +780,7 @@ a.link {
 
    .footer__bottom-min361px {
       display: none;
-   }
+   }*/
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {

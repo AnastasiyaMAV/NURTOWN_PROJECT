@@ -13,100 +13,106 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header__logo"><img src="images/logo.png" alt="logo"></div>
-            <div class="header__nav">
-                <div class="header__boss"><a href="index.html">
-                        ГЛАВНАЯ
+    <header class="header">
+        <div class="header__logo"><img src="images/logo.png" alt="logo"></div>
+        <div class="header__nav">
+            <div class="header__boss"><a href="index.html">
+                    ГЛАВНАЯ
                     </a></div>
-                <div class="header__gallery"><a href="gallery.html">ГАЛЕРЕЯ</a></div>
-                <div class="header__projects"><a href="projects.html">
-                        <hr>ПРОЕКТЫ
-                        <hr></a></div>
-                <div class="header__sertificates"><a href="certificates.html">СЕРТИФИКАТЫ</a></div>
-                <div class="header__contacts"><a href="contact_Info.html">КОНТАКТЫ</a></div>
+            <div class="header__gallery"><a href="gallery.html">ГАЛЕРЕЯ</a></div>
+            <div class="header__projects"><a href="projects.html"><hr>ПРОЕКТЫ<hr></a></div>
+            <div class="header__sertificates"><a href="certificates.html">СЕРТИФИКАТЫ</a></div>
+            <div class="header__contacts"><a href="contact_Info.html">КОНТАКТЫ</a></div>
+        </div>
+    </header>
+
+    <header class="header-max768">
+        <div class="collapse text-right text-decoration-none" id="navbarToggleExternalContent">
+            <div class="p-4" style="background-color: #414141;">
+                <ul class="header__link-max768 list-unstyled">
+                    <li class="text-muted"><a href="index.html">ГЛАВНАЯ</a></li>
+                    <li class="text-muted"><a href="gallery.html">ГАЛЕРЕЯ</a></li>
+                    <li class="text-muted"><a href="projects.html">ПРОЕКТЫ</a></li>
+                    <li class="text-muted"><a href="certificates.html">СЕРТИФИКАТЫ</a></li>
+                    <li class="text-muted"><a href="contact_Info.html">КОНТАКТЫ</a></li>
+                </ul>
             </div>
-        </header>
+        </div>
+        <nav class="navbar navbar-dark" style="background-color: #414141;">
+            <div class="header__logo-max768"><img src="images/logo-footer.png" alt="logo" width="90"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
 
-        <header class="header-max768">
-            <div class="collapse text-right text-decoration-none" id="navbarToggleExternalContent">
-                <div class="p-4" style="background-color: #414141;">
-                    <ul class="header__link-max768 list-unstyled">
-                        <li class="text-muted"><a href="index.html">ГЛАВНАЯ</a></li>
-                        <li class="text-muted"><a href="gallery.html">ГАЛЕРЕЯ</a></li>
-                        <li class="text-muted"><a href="projects.html">ПРОЕКТЫ</a></li>
-                        <li class="text-muted"><a href="#">СЕРТИФИКАТЫ</a></li>
-                        <li class="text-muted"><a href="#">КОНТАКТЫ</a></li>
-                    </ul>
+    <main class="main">
+        <div class="content">
+            <div class="title"><h1>НАШИ<br><span class="bold">ПРОЕКТЫ</span></h1></div>
+            <article class="school">
+                <div class="school__row">
+                    <div class="school__col_first">
+                        <img class="school__img" src="images/projects/school.svg" alt="school">
+                    </div>
+                    <div class="school__col_second">
+                        <div class="school__txt">
+                            <h4>Общеобразовательная школа</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+                                aliquam
+                                similique sunt facilis provident tenetur nobis asperiores, esse cum. Libero voluptates
+                                quidem nostrum quisquam! Hic eum doloremque accusantium facilis qui.</p>
+                        </div>
+                        <div class="button"><a href="#" class="school__button white-button btn btn-light" role="button"
+                                aria-pressed="true">Смотреть
+                                <img src="images/arrow_lookat.svg" alt="arrow">
+                            </a></div>
+                    </div>
                 </div>
-            </div>
-            <nav class="navbar navbar-dark" style="background-color: #414141;">
-                <div class="header__logo-max768"><img src="images/logo-footer.png" alt="logo"></div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-        </header>
-        <main>
-            <h1>НАШИ<br><span class="bold">ПРОЕКТЫ</span></h1>
-
-            <div class="school__row row">
-                <div class="school__col_first">
-                    <img class="school__img" src="images/projects/school.svg" alt="school">
+            </article>
+            <article class="parking">
+                <div class="parking__row">
+                    <div class="parking__col_first">
+                        <img class="parking__img" src="images/projects/parking.svg" alt="parking">
+                    </div>
+                    <div class="parking__col_second">
+                        <div class="parking__txt">
+                            <h4>Паркинг на 500 автомобилей</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+                                aliquam
+                                similique sunt facilis provident tenetur nobis asperiores, esse cum. Libero voluptates
+                                quidem nostrum quisquam! Hic eum doloremque accusantium facilis qui.</p>
+                        </div>
+                        <div class="button"><a href="parking.html" class="parking__button white-button btn btn-light"
+                                role="button" aria-pressed="true">Смотреть
+                                <img src="images/arrow_lookat.svg" alt="arrow">
+                            </a></div>
+                    </div>
                 </div>
-                <div class="school__col_second">
-                    <h4>Общеобразовательная школа</h4>
-                    <p class="school__txt txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
-                        aliquam
-                        similique sunt facilis provident tenetur nobis asperiores, esse cum. Libero voluptates
-                        quidem nostrum quisquam! Hic eum doloremque accusantium facilis qui.</p>
-                    <a href="#" class="school__button white-button btn btn-light" role="button"
-                        aria-pressed="true">Смотреть
-                        <img src="images/arrow_lookat.svg" alt="arrow">
-                    </a>
+            </article>
+
+            <article class="office">
+                <div class="office__row">
+                    <div class="office__col_first">
+                        <img class="office__img" src="images/projects/office.svg" alt="office">
+                    </div>
+                    <div class="office__col_second">
+
+                        <div class="office__txt">
+                            <h4>Проект интерьера офиса</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+                                aliquam
+                                similique sunt facilis provident tenetur nobis asperiores, esse cum. Libero voluptates
+                                quidem nostrum quisquam! Hic eum doloremque accusantium facilis qui.</p>
+                        </div>
+                        <div class="button"><a href="#" class="office__button white-button btn btn-light" role="button"
+                                aria-pressed="true">Смотреть
+                                <img src="images/arrow_lookat.svg" alt="arrow">
+                            </a></div>
+                    </div>
                 </div>
-            </div>
-
-
-            <div class="parking__row row">
-                <div class="parking__col_first">
-                    <img class="parking__img" src="images/projects/parking.svg" alt="parking">
-                </div>
-                <div class="parking__col_second">
-                    <h4>Паркинг на 500 автомобилей</h4>
-                    <p class="parking__txt txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
-                        aliquam
-                        similique sunt facilis provident tenetur nobis asperiores, esse cum. Libero voluptates
-                        quidem nostrum quisquam! Hic eum doloremque accusantium facilis qui.</p>
-                    <a href="parking.html" class="parking__button white-button btn btn-light" role="button"
-                        aria-pressed="true">Смотреть
-                        <img src="images/arrow_lookat.svg" alt="arrow">
-                    </a>
-                </div>
-            </div>
-
-
-
-            <div class="office__row row">
-                <div class="office__col_first">
-                    <img class="office__img" src="images/projects/office.svg" alt="office">
-                </div>
-                <div class="office__col_second">
-                    <h4>Проект интерьера офиса</h4>
-                    <p class="office__txt txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
-                        aliquam
-                        similique sunt facilis provident tenetur nobis asperiores, esse cum. Libero voluptates
-                        quidem nostrum quisquam! Hic eum doloremque accusantium facilis qui.</p>
-                    <a href="#" class="office__button white-button btn btn-light" role="button"
-                        aria-pressed="true">Смотреть
-                        <img src="images/arrow_lookat.svg" alt="arrow">
-                    </a>
-                </div>
-            </div>
-
+            </article>
             <div class="pagination">
                 <div class="pagination__body">
                     <div class="pages"><button class="start">01</button><img src="images/slash.png" alt="slash"><button
@@ -116,7 +122,8 @@
                     <button class="right"><img src="images/arrow-2-right-long.svg" alt=""></button>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
 
 
     </div>
