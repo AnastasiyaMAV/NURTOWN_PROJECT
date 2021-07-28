@@ -54,7 +54,7 @@ img {
 
 }
 
-.txt {
+.about__txt {
     font-weight: 300;
     font-style: normal;
     font-size: calc(12px + 4 * (100vw / 1440));
@@ -393,7 +393,7 @@ a.link {
         text-align: center;
     }
 
-    .txt {
+    .about__txt {
 
         font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
 

@@ -7,7 +7,7 @@ body {
 h2 {
    font-weight: 300;
    font-style: normal;
-   font-size: 64px;
+   font-size: calc(40px + 19 * (100vw / 1440));
    color: #BDBDBD;
 }
 
@@ -101,7 +101,7 @@ li.text-muted>a:hover {
 h1 {
    font-weight: 300;
    font-style: normal;
-   font-size: 64px;
+   font-size: calc(45px + 19 * (100vw / 1440));
    color: #BDBDBD;
 }
 
@@ -221,9 +221,12 @@ h1 {
    margin-right: 5%;
 }
 
-.about_txt {
-   font-size: 1.5em;
+.about__txt {
+   /*font-size: 1.5em;*/
+   font-size: calc(12px + 4 * (100vw / 1440));
+
 }
+
 
 .about__button {
    background-color: white;
@@ -249,7 +252,8 @@ h1 {
    font-family: 'SF Pro Display';
    font-weight: 900;
    font-style: normal;
-   font-size: 200px;
+   /*font-size: 200px;*/
+   font-size: calc(120px + 80 * (100vw / 1440));
    color: #e9e5e5;
    justify-content: left;
 }
@@ -257,7 +261,8 @@ h1 {
 .our-tasks__text {
    font-weight: normal;
    font-style: normal;
-   font-size: 22px;
+   /*font-size: 22px;*/
+   font-size: calc(16px + 6 * (100vw / 1440));
 }
 
 .our-tasks__first {
@@ -323,7 +328,8 @@ h1 {
 .centered>h4 {
    font-weight: bold;
    font-style: normal;
-   font-size: 2.5em;
+   font-size: calc(35px + 29 * (100vw / 1440));
+
 }
 
 .our-projects__bottom {
@@ -520,6 +526,14 @@ a.link {
 }*/
 
 @media screen and (max-width: 360px) {
+   h2 {
+      font-size: calc(40px + (24 + 24 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
+   h1 {
+      font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
    .header {
       display: none;
    }
@@ -556,7 +570,7 @@ a.link {
       margin-top: 8%;
       margin-left: 8%;
       margin-right: 8%;
-      font-size: 1em;
+      /*font-size: 1em;*/
       background-color: white;
    }
 
@@ -576,7 +590,8 @@ a.link {
       margin-left: 5%;
    }
 
-   .about_txt {
+   .about__txt {
+      font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
       margin-left: 10%;
       margin-left: 5%;
    }
@@ -588,6 +603,18 @@ a.link {
 
    .about__button>img {
       display: none;
+   }
+
+   .our-tasks__digit {
+      font-size: calc(120px + (80 + 80 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
+   .our-tasks__text {
+      font-size: calc(16px + (6 + 6 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
+   h4 {
+      font-size: calc(35px + (29 + 29 * 0.7) * ((100vw - 320px) / 1440));
    }
 
    .content-image__contact {
@@ -623,6 +650,15 @@ a.link {
 }
 
 @media screen and (min-width: 361px) and (max-width: 499px) {
+
+   h2 {
+      font-size: calc(40px + (24 + 24 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
+   h1 {
+      font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
    .header {
       display: none;
    }
@@ -662,7 +698,7 @@ a.link {
       margin-top: 8%;
       margin-left: 8%;
       margin-right: 8%;
-      font-size: 1.1em;
+      /*font-size: 1.1em;*/
       background-color: white;
    }
 
@@ -682,15 +718,28 @@ a.link {
       margin-left: 5%;
    }
 
-   .about_txt {
+   .about__txt {
       margin-left: 10%;
-      font-size: 1.3em;
+      /*font-size: 1.3em;*/
       margin-left: 5%;
+      font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
    }
 
    .about__button {
       max-width: 40%;
       margin-left: 5%;
+   }
+
+   .our-tasks__digit {
+      font-size: calc(120px + (80 + 80 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
+   .our-tasks__text {
+      font-size: calc(16px + (6 + 6 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
+   h4 {
+      font-size: calc(35px + (29 + 29 * 0.7) * ((100vw - 320px) / 1440));
    }
 
    .content-image__contact {
@@ -804,6 +853,14 @@ a.link {
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
+   h2 {
+      font-size: calc(40px + (24 + 24 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
+   h1 {
+      font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
    .header {
       display: none;
    }
@@ -818,7 +875,7 @@ a.link {
       margin-top: 8%;
       margin-left: 8%;
       margin-right: 8%;
-      font-size: 1.3em;
+      /*font-size: 1.3em;*/
       background-color: white;
    }
 
@@ -840,15 +897,27 @@ a.link {
       margin-left: 5%;
    }
 
-   .about_txt {
+   .about__txt {
       margin-left: 10%;
-      font-size: 1.3em;
+      font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
       margin-left: 5%;
    }
 
    .about__button {
       max-width: 40%;
       margin-left: 5%;
+   }
+
+   .our-tasks__digit {
+      font-size: calc(120px + (80 + 80 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
+   h4 {
+      font-size: calc(35px + (29 + 29 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
+   .our-tasks__text {
+      font-size: calc(16px + (6 + 6 * 0.7) * ((100vw - 320px) / 1440));
    }
 
    .content-image__contact {
@@ -942,8 +1011,34 @@ a.link {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+   h2 {
+      font-size: calc(40px + (24 + 24 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
+   h1 {
+      font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
    .header-max768 {
       display: none;
+   }
+
+   .about__txt {
+      margin-left: 10%;
+      font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
+      margin-left: 5%;
+   }
+
+   .our-tasks__digit {
+      font-size: calc(120px + (80 + 80 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
+   .our-tasks__text {
+      font-size: calc(16px + (6 + 6 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
+   h4 {
+      font-size: calc(35px + (29 + 29 * 0.7) * ((100vw - 320px) / 1440));
    }
 
    .content-image__contact {
