@@ -11,78 +11,6 @@ h2 {
    color: #BDBDBD;
 }
 
-/*header - Ольга*/
-/*.header {
-   display: grid;
-   max-width: 100%;
-   grid-template-columns: 1fr 2fr;
-   grid-template-rows: 1fr;
-   grid-template-areas: "header__logo header__nav";
-   padding: 1vh;
-}
-
-.header__logo {
-   grid-area: header__logo;
-   display: grid;
-   max-width: 100%;
-   justify-content: center;
-   align-items: center;
-}
-
-a {
-   text-decoration: none;
-   color: black;
-}
-
-.header__nav {
-   font-weight: normal;
-   font-style: normal;
-   font-size: 12px;
-   grid-area: header__nav;
-   display: grid;
-   grid-template-columns: repeat(5, 1fr);
-   grid-template-rows: 1fr;
-   grid-template-areas:
-      "header__boss header__gallery header__projects header__sertificates header__contacts";
-   justify-content: start;
-   align-items: center;
-   gap: 2vw;
-}
-
-.header__boss {
-   grid-area: header__boss;
-}
-
-.header__gallery {
-   grid-area: header__gallery;
-}
-
-.header__projects {
-   grid-area: header__projects;
-}
-
-.header__sertificates {
-   grid-area: header__sertificates;
-}
-
-.header__contacts {
-   grid-area: header__contacts;
-}
-
-ul.header__link-max768 {
-   align-items: center;
-}
-
-li.text-muted>a {
-   text-decoration: none;
-   color: #FFFFFF;
-}
-
-li.text-muted>a:hover {
-   text-decoration: none;
-   color: #7A7A7A;
-}*/
-
 /*article: introduction и about - Лариса*/
 .introduction {
    display: grid;
@@ -117,6 +45,8 @@ h1 {
 }
 
 .arrows {
+   display: flex;
+   justify-content: flex-start;
    margin-bottom: 90px;
 }
 
@@ -154,7 +84,6 @@ h1 {
 }
 
 /*отступ карусели справа*/
-
 .introduction__button {
    position: absolute;
    left: 1%;
@@ -179,7 +108,6 @@ h1 {
    align-content: center;
    justify-items: center;
    background-color: rgba(239, 239, 240, 0.445);
-
    margin-top: 8%;
    margin-left: 8%;
    margin-right: 8%;
@@ -224,9 +152,7 @@ h1 {
 .about__txt {
    /*font-size: 1.5em;*/
    font-size: calc(12px + 4 * (100vw / 1440));
-
 }
-
 
 .about__button {
    background-color: white;
@@ -363,167 +289,8 @@ h1 {
 }
 
 .border_style {
-   /*Кнопки и формы становятся без закругления, как на макете*/
    border-radius: 0px;
 }
-
-/*footer - Ольга*/
-/*.footer {
-   display: grid;
-   background-color: #2C2C2C;
-   color: #FFFFFF;
-   font-weight: 500;
-   font-style: normal;
-   font-size: 14px;
-}
-
-.title1,
-.title2,
-.title3 {
-   font-weight: bold;
-   font-size: 16px;
-}
-
-a.link {
-   color: #FFFFFF;
-}
-
-.footer__top {
-   display: grid;
-   padding: 8vh;
-   grid-template-columns: 1fr 1fr 1.5fr 1fr;
-   grid-template-rows: 1fr;
-   grid-template-areas: "footer__logo footer__information footer__contacts footer__social";
-}
-
-.footer__logo {
-   display: grid;
-   grid-area: footer__logo;
-   justify-content: start;
-   align-items: start;
-}
-
-.footer__information {
-   display: grid;
-   grid-area: footer__information;
-   grid-template-columns: 1fr;
-   grid-template-rows: repeat(6, 1fr);
-   grid-template-areas: "title1"
-      "footer__boss"
-      "footer__gallery"
-      "footer__projects "
-      "footer__sertificates"
-      "footer__contact";
-   gap: 20px;
-}
-
-.title1 {
-   grid-area: title1;
-}
-
-.footer__boss {
-   grid-area: footer__boss;
-}
-
-.footer__gallery {
-   grid-area: footer__gallery;
-}
-
-.footer__projects {
-   grid-area: footer__projects;
-}
-
-.footer__sertificates {
-   grid-area: footer__sertificates;
-}
-
-.footer__contact {
-   grid-area: footer__contact;
-}
-
-.footer__contacts {
-   display: grid;
-   grid-area: footer__contacts;
-   grid-template-columns: 1fr;
-   grid-template-rows: repeat(5, 1fr);
-   grid-template-areas: "title2"
-      "footer__location"
-      "."
-      "footer__phone"
-      "footer__mail";
-}
-
-.title2 {
-   grid-area: title2;
-}
-
-.footer__location {
-   grid-area: footer__location;
-}
-
-.footer__phone {
-   grid-area: footer__phone;
-}
-
-.footer__mail {
-   grid-area: footer__mail;
-}
-
-.footer__social {
-   grid-area: footer__social;
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: 10% 1fr;
-   grid-template-areas: "title3"
-      "footer__social-wrapper";
-   justify-content: start;
-   gap: 20px;
-}
-
-.title3 {
-   grid-area: title3;
-}
-
-.footer__social-wrapper {
-   grid-area: footer__social-wrapper;
-   display: grid;
-   max-width: 195px;
-   grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: 1fr;
-   grid-template-areas: "footer__facebook footer__twitter footer__linked footer__pinterest";
-}
-
-.footer__facebook {
-   grid-area: footer__facebook;
-}
-
-.footer__twitter {
-   grid-area: footer__twitter;
-}
-
-.footer__linked {
-   grid-area: footer__linked;
-}
-
-.footer__pinterest {
-   grid-area: footer__pinterest;
-}
-
-.footer__line {
-   border: solid 1px #414141;
-   width: 99%;
-   color: #414141;
-   height: 0.3%;
-}
-
-.footer__bottom {
-   display: grid;
-   justify-content: center;
-   align-items: center;
-   font-size: 16px;
-   color: #414141;
-   padding: 2%;
-}*/
 
 @media screen and (max-width: 360px) {
    h2 {
