@@ -41,6 +41,10 @@ h1 {
    justify-content: space-between;
 }
 
+.arrows {
+   display: flex;
+}
+
 .start,
 .end,
 .left,
@@ -85,7 +89,7 @@ h1 {
    }
 
    .pagination {
-      display: grid;
+      display: flex;
       justify-content: center;
    }
 
@@ -114,7 +118,7 @@ h1 {
    }
 
    .pagination {
-      display: grid;
+      display: flex;
       justify-content: center;
    }
 
@@ -217,7 +221,7 @@ h1 {
    }
 
    .pagination {
-      display: grid;
+      display: flex;
       justify-content: center;
    }
 
@@ -321,7 +325,7 @@ h1 {
    }
 
    .pagination {
-      display: grid;
+      display: flex;
       justify-content: center;
    }
 
