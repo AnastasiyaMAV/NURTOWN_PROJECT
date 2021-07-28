@@ -594,6 +594,18 @@ a.link {
       display: none;
    }
 
+   .back-btn {
+      text-decoration: none;
+      padding: 0.5%;
+      border: solid 1px #414141;
+      position: relative;
+      left: 70%;
+   }
+
+   .back-btn:hover {
+      background-color: #585c61;
+   }
+
    .footer {
       display: none;
    }
@@ -673,6 +685,18 @@ a.link {
 
    .content-image__contact {
       display: none;
+   }
+
+   .back-btn {
+      text-decoration: none;
+      padding: 0.5%;
+      border: solid 1px #414141;
+      position: relative;
+      left: 70%;
+   }
+
+   .back-btn:hover {
+      background-color: #585c61;
    }
 
    .footer__top {
@@ -807,6 +831,10 @@ a.link {
       max-width: 45%;
    }
 
+   .back-btn {
+      display: none;
+   }
+
    .footer__top {
       display: grid;
       padding: 8vh;
@@ -898,6 +926,10 @@ a.link {
       max-width: 45%;
    }
 
+   .back-btn {
+      display: none;
+   }
+
    .footer__contacts-min361px {
       display: none;
    }
@@ -930,6 +962,10 @@ a.link {
 
    .content-image__contact {
       max-width: 45%;
+   }
+
+   .back-btn {
+      display: none;
    }
 
    .footer__contacts-min361px {
