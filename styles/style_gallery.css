@@ -72,6 +72,42 @@ h1 {
    background-color: #F9F9F9;
 }
 
+.img__tooltip {
+   position: relative;
+   margin: 10px auto;
+}
+
+.tooltip {
+   position: absolute;
+   /*ширина всплывающего описания */
+   width: 95%;
+   /*размер шрифта */
+   font-size: 1.5vw;
+   /*сдвиг всплывающего окна в середину изображения*/
+   top: 50%;
+   /*сдвиг всплывающего окна по левой стороне изображения*/
+   left: 2%;
+   /*установка прозразности*/
+   filter: alpha(opacity=0);
+   opacity: 0;
+   /*выравнивание текста */
+   text-align: left;
+   /*цвет текста */
+   color: whitesmoke;
+   /*фон блока с текстом */
+   background: black;
+   /*св-во позволяют элементам изменять значения в течение опр-ого периода времени, 
+                              анимируя изменения свойств, а не заставляя их происходить немедленно*/
+   transition: all ease 0.5s;
+}
+
+.img__tooltip:hover .tooltip {
+   /*установка прозразности*/
+   filter: alpha(opacity=70);
+   /*gрозрачность при наведении мыши */
+   opacity: .7;
+}
+
 @media screen and (max-width: 360px) {
    .header {
       display: none;
@@ -89,6 +125,10 @@ h1 {
       width: 80vw;
       grid-gap: 15px;
       margin: 10% auto;
+   }
+
+   .tooltip {
+      display: none;
    }
 
    .footer {
@@ -113,6 +153,10 @@ h1 {
       width: 80vw;
       grid-gap: 15px;
       margin: 10% auto;
+   }
+
+   .tooltip {
+      display: none;
    }
 
    .footer {
