@@ -1,7 +1,7 @@
 @import url(style_header_footer.css);
 
 .parking__title {
-      margin-top: 10vw;
+   margin-top: 10vw;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 h1 {
    font-weight: 300;
    font-style: normal;
-   font-size: 4vw;
+   font-size: calc(45px + 19 * (100vw / 1440));
    color: #BDBDBD;
 }
 
@@ -43,14 +43,14 @@ h1 {
    }
 
    h1 {
-      font-size: 8vw;
+      font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
    }
 
    .parking__text {
 
       font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
 
-}
+   }
 
    .parking__content {
       display: grid;
@@ -62,23 +62,23 @@ h1 {
          'three'
          'four';
       margin: 10%;
-   } 
-   
+   }
+
    .parking__item--1 {
       grid-area: one;
       width: 80vw;
    }
-   
+
    .parking__item--2 {
       grid-area: two;
       width: 80vw;
    }
-   
+
    .parking__item--3 {
       grid-area: three;
 
    }
-   
+
    .parking__item--4 {
       grid-area: four;
       width: 80vw;
@@ -98,14 +98,14 @@ h1 {
    }
 
    h1 {
-      font-size: 8vw;
+      font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
    }
 
    .parking__text {
 
       font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
 
-}
+   }
 
    .parking__content {
       display: grid;
@@ -118,44 +118,45 @@ h1 {
          'four';
       margin: 10%;
    }
-   
+
    .parking__item--1 {
       grid-area: one;
       width: 80vw;
    }
-   
+
    .parking__item--2 {
       grid-area: two;
       width: 80vw;
    }
-   
+
    .parking__item--3 {
       grid-area: three;
 
    }
-   
+
    .parking__item--4 {
       grid-area: four;
       width: 80vw;
    }
 
-   
+
    .footer {
       display: none;
    }
 }
+
 @media screen and (min-width: 500px) and (max-width: 768px) {
    .header {
       display: none;
    }
 
    h1 {
-      font-size: 8vw;
+      font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
    }
 
    .parking__text {
       font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
-}
+   }
 
    .parking__content {
       display: grid;
@@ -168,23 +169,23 @@ h1 {
          'four';
       margin: 5%;
    }
-   
+
    .parking__item--1 {
       grid-area: one;
       width: 90vw;
       height: 10vh;
    }
-   
+
    .parking__item--2 {
       grid-area: two;
       width: 90vw;
    }
-   
+
    .parking__item--3 {
       grid-area: three;
 
    }
-   
+
    .parking__item--4 {
       grid-area: four;
       width: 90vw;
@@ -277,50 +278,53 @@ h1 {
    .header-max768 {
       display: none;
    }
+
    .parking__title {
       margin-top: 5%;
    }
+
    h1 {
-      font-size: 6vw;
+      font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
    }
+
    .parking__text {
 
       font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
 
-}
+   }
 
-.parking__content {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: 0.6fr 1.4fr 0.6fr;
-   grid-template-areas:
-      'one one one'
-      'two three three'
-      'four four four';
-   grid-gap: 15px;
-   margin: 10%;
-}
+   .parking__content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 0.6fr 1.4fr 0.6fr;
+      grid-template-areas:
+         'one one one'
+         'two three three'
+         'four four four';
+      grid-gap: 15px;
+      margin: 10%;
+   }
 
-.parking__item--1 {
-   grid-area: one;
-}
+   .parking__item--1 {
+      grid-area: one;
+   }
 
-.parking__item--2 {
-   grid-area: two;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   display: block;
+   .parking__item--2 {
+      grid-area: two;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
 
-}
+   }
 
-.parking__item--3 {
-   grid-area: three;
-}
+   .parking__item--3 {
+      grid-area: three;
+   }
 
-.parking__item--4 {
-   grid-area: four;
-}
+   .parking__item--4 {
+      grid-area: four;
+   }
 
 
    .footer__contacts-min361px {
@@ -371,19 +375,19 @@ h1 {
       grid-gap: 15px;
       margin: 10%;
    }
-   
+
    .parking__item--1 {
       grid-area: one;
    }
-   
+
    .parking__item--2 {
       grid-area: two;
    }
-   
+
    .parking__item--3 {
       grid-area: three;
    }
-   
+
    .parking__item--4 {
       grid-area: four;
    }
@@ -400,6 +404,3 @@ h1 {
       display: none;
    }
 }
-
-
-
