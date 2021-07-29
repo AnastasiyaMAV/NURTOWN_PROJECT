@@ -13,6 +13,13 @@ body {
     color: black;
 }
 
+h1 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: calc(45px + 19 * (100vw / 1440));
+    color: #BDBDBD;
+}
+
 @media screen and (max-width: 360px) {
     .header {
         display: none;
@@ -30,7 +37,7 @@ body {
     h1 {
         font-weight: 300;
         font-style: normal;
-        font-size: 10vw;
+        font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
         color: #BDBDBD;
     }
 
@@ -94,10 +101,7 @@ body {
     }
 
     h1 {
-        font-weight: 300;
-        font-style: normal;
-        font-size: 10vw;
-        color: #BDBDBD;
+        font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
     }
 
     .content__style_3 {
@@ -159,10 +163,7 @@ body {
     }
 
     h1 {
-        font-weight: 300;
-        font-style: normal;
-        font-size: 10vw;
-        color: #BDBDBD;
+        font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
     }
 
     .content__style_3 {
@@ -301,10 +302,7 @@ body {
     }
 
     h1 {
-        font-weight: 300;
-        font-style: normal;
-        font-size: 5vw;
-        color: #BDBDBD;
+        font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
     }
 
     .content__style_3 {
@@ -385,12 +383,7 @@ body {
         display: none;
     }
 
-    h1 {
-        font-weight: 300;
-        font-style: normal;
-        font-size: 4vw;
-        color: #BDBDBD;
-    }
+
 
     .content__style_3 {
         font-weight: bold;
