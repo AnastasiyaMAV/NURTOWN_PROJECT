@@ -30,8 +30,10 @@ a {
     grid-template-rows: 1fr;
     grid-template-areas:
         "header__boss header__gallery header__projects header__sertificates header__contacts";
-    justify-content: start;
+    /*justify-content: center;
+    align-items: center;*/
     align-items: center;
+    text-align: center;
     gap: 2vw;
 }
 
