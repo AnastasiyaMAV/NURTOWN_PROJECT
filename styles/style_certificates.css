@@ -14,7 +14,7 @@ body {
 h1 {
    font-weight: 300;
    font-style: normal;
-   font-size: 4vw;
+   font-size: calc(45px + 19 * (100vw / 1440));
    color: #BDBDBD;
 }
 
@@ -76,7 +76,7 @@ h1 {
    }
 
    h1 {
-      font-size: 8vw;
+      font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
    }
 
    .certificates__row {
@@ -105,7 +105,7 @@ h1 {
    }
 
    h1 {
-      font-size: 8vw;
+      font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
    }
 
    .certificates__row {
@@ -209,7 +209,7 @@ h1 {
    }
 
    h1 {
-      font-size: 8vw;
+      font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
    }
 
    .certificates__row {
@@ -313,7 +313,7 @@ h1 {
    }
 
    h1 {
-      font-size: 6vw;
+      font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
    }
 
    .certificates__row {
