@@ -1,7 +1,7 @@
 .header {
     display: grid;
     max-width: 100%;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 0.5fr 2.5fr;
     grid-template-rows: 1fr;
     grid-template-areas: "header__logo header__nav";
     padding: 1vh;

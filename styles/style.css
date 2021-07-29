@@ -11,6 +11,15 @@ h2 {
    color: #BDBDBD;
 }
 
+.main {
+   width: 100%;
+}
+
+.section {
+   width: 90vw;
+   margin: 10px auto;
+}
+
 /*article: introduction и about - Лариса*/
 .introduction {
    display: grid;
@@ -41,13 +50,13 @@ h1 {
 .pagination-main {
    display: flex;
    flex-direction: column;
-   margin: 100px 0px 130px;
+   margin: 8% 0px;
 }
 
 .arrows {
    display: flex;
    justify-content: flex-start;
-   margin-bottom: 90px;
+   margin-bottom: 8%;
 }
 
 .start,
@@ -109,8 +118,8 @@ h1 {
    justify-items: center;
    background-color: rgba(239, 239, 240, 0.445);
    margin-top: 8%;
-   margin-left: 8%;
-   margin-right: 8%;
+   /*margin-left: 8%;
+   margin-right: 8%;*/
    grid-column-gap: 20px;
 }
 
@@ -161,9 +170,7 @@ h1 {
 
 /*article: our-tasks и our-projects - Олеся*/
 .our-tasks {
-   margin: 100px auto;
-   width: 100vw;
-   max-width: 1170px;
+   margin: 8% auto;
    justify-content: center;
 }
 
@@ -182,6 +189,8 @@ h1 {
    font-size: calc(120px + 80 * (100vw / 1440));
    color: #e9e5e5;
    justify-content: left;
+   line-height: 0.8;
+   width: 80px;
 }
 
 .our-tasks__text {
@@ -189,31 +198,25 @@ h1 {
    font-style: normal;
    /*font-size: 22px;*/
    font-size: calc(16px + 6 * (100vw / 1440));
+   margin: 0 5px;
 }
 
 .our-tasks__first {
    display: grid;
-   grid-template-columns: 0.5fr 1.5fr;
-   justify-content: space-between;
+   grid-template-columns: 0.4fr 1.6fr;
    align-items: center;
 }
 
 .our-tasks__second {
    display: grid;
    grid-template-columns: 0.5fr 1.5fr;
-   justify-content: space-between;
    align-items: center;
 }
 
 .our-projects {
    display: grid;
-   max-width: 1170px;
    grid-area: our-projects;
-   margin: 100px auto 20px;
-}
-
-.our-projects__row {
-   margin-top: 20px;
+   margin: 8% auto;
 }
 
 .our-projects__top {
@@ -295,6 +298,7 @@ h1 {
 @media screen and (max-width: 360px) {
    h2 {
       font-size: calc(40px + (24 + 24 * 0.7) * ((100vw - 320px) / 1440));
+      text-align: center;
    }
 
    h1 {
@@ -303,6 +307,13 @@ h1 {
 
    .header {
       display: none;
+   }
+
+   .pagination-main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 8% auto;
    }
 
    .introduction {
@@ -315,8 +326,7 @@ h1 {
    .introduction__txt {
       grid-area: introduction__txt;
       display: grid;
-      justify-content: start;
-      margin-left: 5%;
+      justify-content: center;
    }
 
    .carousel-inner {
@@ -372,12 +382,21 @@ h1 {
       display: none;
    }
 
+   .our-tasks__row {
+      margin-top: 5%;
+   }
+
    .our-tasks__digit {
       font-size: calc(120px + (80 + 80 * 0.7) * ((100vw - 320px) / 1440));
    }
 
    .our-tasks__text {
       font-size: calc(16px + (6 + 6 * 0.7) * ((100vw - 320px) / 1440));
+      padding: 0;
+   }
+
+   .our-projects__row {
+      margin-top: 5%;
    }
 
    h4 {
@@ -420,6 +439,7 @@ h1 {
 
    h2 {
       font-size: calc(40px + (24 + 24 * 0.7) * ((100vw - 320px) / 1440));
+      text-align: center;
    }
 
    h1 {
@@ -428,6 +448,13 @@ h1 {
 
    .header {
       display: none;
+   }
+
+   .pagination-main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 8% auto;
    }
 
    .introduction {
@@ -440,7 +467,7 @@ h1 {
    .introduction__txt {
       grid-area: introduction__txt;
       display: grid;
-      justify-content: start;
+      justify-content: center;
       margin-left: 5%;
    }
 
@@ -497,12 +524,20 @@ h1 {
       margin-left: 5%;
    }
 
+   .our-tasks__row {
+      margin-top: 5%;
+   }
+
    .our-tasks__digit {
       font-size: calc(120px + (80 + 80 * 0.7) * ((100vw - 320px) / 1440));
    }
 
    .our-tasks__text {
       font-size: calc(16px + (6 + 6 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
+   .our-projects__row {
+      margin-top: 5%;
    }
 
    h4 {
@@ -539,84 +574,6 @@ h1 {
       display: none;
    }
 
-   /*.footer__top {
-      display: grid;
-      padding: 8vh;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "footer__logo footer__logo footer__logo"
-         "footer__information footer__contacts-min361px footer__social";
-      gap: 20px;
-   }
-
-   .footer__logo {
-      display: grid;
-      grid-area: footer__logo;
-      justify-content: center;
-      align-items: center;
-   }
-
-   .footer__contacts {
-      display: none;
-   }
-
-   .footer__contacts-min361px {
-      display: grid;
-      grid-area: footer__contacts-min361px;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr);
-      grid-template-areas:
-         "title2-min361px"
-         "footer__phone-min361px"
-         "footer__mail-min361px";
-   }
-
-   .title2-min361px {
-      grid-area: title2-min361px;
-   }
-
-   .footer__phone-min361px {
-      grid-area: footer__phone-min361px;
-   }
-
-   .btn-min361px {
-      border-radius: 40%;
-      background-color: #7A7A7A;
-   }
-
-   .btn-min361px:hover {
-      background-color: #504e4e;
-   }
-
-   .footer__mail-min361px {
-      grid-area: footer__mail-min361px;
-   }
-
-   .footer__social-wrapper {
-      grid-area: footer__social-wrapper;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, 1fr);
-      grid-template-areas:
-         "footer__facebook"
-         "footer__twitter"
-         "footer__linked"
-         "footer__pinterest";
-      justify-content: start;
-      align-items: stretch;
-   }
-
-   .footer__bottom {
-      display: none;
-   }
-
-   .footer__line {
-      display: none;
-   }
-
-   .footer__bottom-min361px {
-      display: none;
-   }*/
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
@@ -632,6 +589,23 @@ h1 {
       display: none;
    }
 
+   .introduction__txt {
+      margin-right: 10%;
+   }
+
+   .pagination-main {
+      display: flex;
+      flex-direction: row;
+   }
+
+   .arrows {
+      margin: 0;
+   }
+
+   .right {
+      margin-left: 10px;
+   }
+
    .about__row {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -639,7 +613,6 @@ h1 {
       grid-template-areas: 'about__col_third about__col_third''about__col_second about__col_first';
       justify-content: center;
       align-content: center;
-      margin-top: 8%;
       margin-left: 8%;
       margin-right: 8%;
       /*font-size: 1.3em;*/
@@ -665,7 +638,6 @@ h1 {
    }
 
    .about__txt {
-      margin-left: 10%;
       font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
       margin-left: 5%;
    }
@@ -673,6 +645,10 @@ h1 {
    .about__button {
       max-width: 40%;
       margin-left: 5%;
+   }
+
+   .our-tasks__row {
+      margin-top: 5%;
    }
 
    .our-tasks__digit {
@@ -685,6 +661,11 @@ h1 {
 
    .our-tasks__text {
       font-size: calc(16px + (6 + 6 * 0.7) * ((100vw - 320px) / 1440));
+      margin-left: 10%;
+   }
+
+   .our-projects__row {
+      margin-top: 5%;
    }
 
    .content-image__contact {
@@ -790,10 +771,23 @@ h1 {
       display: none;
    }
 
+   .introduction__txt {
+      margin-right: 5%;
+   }
+
+   .pagination-main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
    .about__txt {
-      margin-left: 10%;
       font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
-      margin-left: 5%;
+      padding-right: 5%;
+   }
+
+   .our-tasks__row {
+      margin-top: 5%;
    }
 
    .our-tasks__digit {
@@ -802,6 +796,11 @@ h1 {
 
    .our-tasks__text {
       font-size: calc(16px + (6 + 6 * 0.7) * ((100vw - 320px) / 1440));
+      margin-left: 10%;
+   }
+
+   .our-projects__row {
+      margin-top: 5%;
    }
 
    h4 {
@@ -846,8 +845,24 @@ h1 {
       display: none;
    }
 
+   .introduction__txt {
+      margin-right: 5%;
+   }
+
+   .about__txt {
+      padding-right: 5%;
+   }
+
    .content-image__contact {
       max-width: 45%;
+   }
+
+   .our-tasks__row {
+      margin-top: 5%;
+   }
+
+   .our-projects__row {
+      margin-top: 5%;
    }
 
    .back-btn {
