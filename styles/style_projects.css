@@ -7,7 +7,7 @@ body {
 h1 {
     font-weight: 300;
     font-style: normal;
-    font-size: 4vw;
+    font-size: calc(45px + 19 * (100vw / 1440));
     color: #BDBDBD;
 }
 
@@ -16,7 +16,7 @@ h1 {
     color: black;
 }
 
-/*Обертка установила ширину и дала отступы по бокам чтобы стоять четко посередине*/
+
 .content {
     width: 90vw;
     margin: 20px auto;
@@ -25,7 +25,6 @@ h1 {
 .school__row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /*Колонки поставила не в процентах*/
     grid-template-rows: 1fr;
     grid-template-areas: "school__col_first school__col_second";
     justify-content: center;
@@ -46,7 +45,7 @@ h1 {
     justify-content: start;
     align-content: space-around;
     padding: 4%;
-    /*Паддинг был левый, поставила общий*/
+
 }
 
 img {
@@ -122,7 +121,6 @@ h4 {
     padding: 4%;
 }
 
-/*начало кода кнопок*/
 .pagination {
     display: flex;
     justify-content: flex-start;
@@ -183,6 +181,10 @@ h4 {
     .txt {
         font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
 
+    }
+
+    h1 {
+        font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
     }
 
     h4 {
@@ -258,6 +260,10 @@ h4 {
 
     }
 
+    h1 {
+        font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
+    }
+
     h4 {
         font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1440));
     }
@@ -323,6 +329,10 @@ h4 {
 
     .txt {
         font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
+    }
+
+    h1 {
+        font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
     }
 
     h4 {
@@ -454,6 +464,10 @@ h4 {
 
     }
 
+    h1 {
+        font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
+    }
+
     h4 {
         font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1440));
     }
@@ -506,5 +520,11 @@ h4 {
 
     .footer__bottom-min361px {
         display: none;
+    }
+
+
+    .content {
+        width: 68vw;
+        margin: 20px auto;
     }
 }
