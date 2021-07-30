@@ -43,7 +43,7 @@ h1 {
    }
 
    h1 {
-      font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
+      font-size: 10vw;
    }
 
    .parking__text {
