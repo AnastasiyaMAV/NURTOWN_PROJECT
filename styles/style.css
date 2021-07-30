@@ -537,13 +537,16 @@ h1 {
       display: none;
    }
 
+   .button-body {
+      display: flex;
+      justify-content: flex-end;
+   }
+
    .back-btn {
       text-decoration: none;
       padding: 1.5%;
       border: solid 1px #414141;
       opacity: 20%;
-      position: relative;
-      left: 55%;
       margin-bottom: 2%;
    }
 
