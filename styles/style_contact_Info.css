@@ -20,7 +20,7 @@ h1 {
     color: #BDBDBD;
 }
 
-@media all and (max-width: 360px) {
+@media screen and (min-width: 50px) and (max-width: 359px) {
     .header {
         display: none;
     }
