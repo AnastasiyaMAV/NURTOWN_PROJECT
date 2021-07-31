@@ -92,7 +92,7 @@ h1 {
         display: grid;
         grid-area: content__grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr;
         justify-items: center;
     }
 
@@ -140,7 +140,7 @@ h1 {
 
     .map_style {
         width: 70%;
-        height: 50%;
+        height: 60%;
     }
 
     .footer {
@@ -382,8 +382,6 @@ h1 {
     .header-max768 {
         display: none;
     }
-
-
 
     .content__style_3 {
         font-weight: bold;
