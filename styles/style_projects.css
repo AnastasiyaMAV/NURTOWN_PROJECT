@@ -260,6 +260,10 @@ h4 {
 
     }
 
+    .button {
+        padding: 10%;
+    }
+
     h1 {
         font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
     }
