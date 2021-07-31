@@ -11,6 +11,10 @@ h2 {
    color: #BDBDBD;
 }
 
+btn-txt {
+   font-size: calc(10px + 2 * (100vw / 1440));
+}
+
 .main {
    width: 100%;
 }
@@ -155,7 +159,7 @@ h1 {
 }
 
 .about__txt {
-   /*font-size: 1.5em;*/
+
    font-size: calc(12px + 4 * (100vw / 1440));
 }
 
@@ -175,7 +179,7 @@ h1 {
    font-family: 'SF Pro Display';
    font-weight: 900;
    font-style: normal;
-   /*font-size: 200px;*/
+
    font-size: calc(120px + 80 * (100vw / 1440));
    color: #e9e5e5;
    justify-content: left;
@@ -186,7 +190,7 @@ h1 {
 .our-tasks__text {
    font-weight: normal;
    font-style: normal;
-   /*font-size: 22px;*/
+
    font-size: calc(16px + 6 * (100vw / 1440));
    margin: 0 5px;
 }
@@ -264,7 +268,6 @@ h1 {
    margin-top: 20px;
 }
 
-/*section - Анастасия*/
 .content__grid {
    display: grid;
    grid-area: content__grid;
@@ -293,6 +296,8 @@ h1 {
    h1 {
       font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
    }
+
+
 
    .header {
       display: none;
@@ -336,7 +341,7 @@ h1 {
       margin-top: 8%;
       margin-left: 8%;
       margin-right: 8%;
-      /*font-size: 1em;*/
+
       background-color: white;
    }
 
@@ -484,7 +489,7 @@ h1 {
       margin-top: 8%;
       margin-left: 8%;
       margin-right: 8%;
-      /*font-size: 1.1em;*/
+
       background-color: white;
    }
 
@@ -506,7 +511,7 @@ h1 {
 
    .about__txt {
       margin-left: 10%;
-      /*font-size: 1.3em;*/
+
       margin-left: 5%;
       font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
    }
@@ -611,7 +616,7 @@ h1 {
       align-content: center;
       margin-left: 8%;
       margin-right: 8%;
-      /*font-size: 1.3em;*/
+
       background-color: white;
    }
 
