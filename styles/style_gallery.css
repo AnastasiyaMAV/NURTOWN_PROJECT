@@ -1,18 +1,16 @@
 @import url(style_header_footer.css);
 
-.gallery__list {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-   grid-template-rows: repeat(auto-fit, 2fr);
-   grid-gap: 15px;
-   margin: 10% auto;
-   /*margin-top: 20px;
-   gap: 20px;*/
-   width: 80vw;
-}
-
 body {
    font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
+}
+
+.main {
+   width: 100%;
+}
+
+.section {
+   width: 80vw;
+   margin: 10px auto;
 }
 
 h1 {
@@ -25,6 +23,14 @@ h1 {
 .bold {
    font-weight: bold;
    color: black;
+}
+
+.gallery__list {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-template-rows: repeat(auto-fit, 2fr);
+   grid-gap: 15px;
+   width: 80vw;
 }
 
 /*добавила эти значения к твоему классу чтобы кнопки стояли где нужно, не съезжали к краю.(и заголовок, кстати, тоже починился)*/

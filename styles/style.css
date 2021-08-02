@@ -11,7 +11,7 @@ h2 {
    color: #BDBDBD;
 }
 
-btn-txt {
+.btn-txt {
    font-size: calc(10px + 2 * (100vw / 1440));
 }
 
@@ -20,7 +20,7 @@ btn-txt {
 }
 
 .section {
-   width: 90vw;
+   width: 80vw;
    margin: 10px auto;
 }
 

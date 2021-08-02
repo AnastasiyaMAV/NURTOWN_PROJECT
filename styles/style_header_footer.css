@@ -7,6 +7,14 @@
     padding: 1vh;
 }
 
+.header__body {
+    display: grid;
+    width: 80vw;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header__logo header__nav";
+}
+
 .header__logo {
     grid-area: header__logo;
     display: grid;
@@ -23,7 +31,7 @@ a {
 .header__nav {
     font-weight: normal;
     font-style: normal;
-    font-size: 1.5vw;
+    font-size: 1vw;
     grid-area: header__nav;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
