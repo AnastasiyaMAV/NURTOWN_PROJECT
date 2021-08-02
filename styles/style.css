@@ -172,9 +172,10 @@ h1 {
 
 .our-tasks__row {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
    grid-template-rows: repeat(1, 1fr);
    gap: 20px;
+   justify-content: center;
 }
 
 .our-tasks__digit {
@@ -392,6 +393,10 @@ h1 {
       padding: 0;
    }
 
+   .our-projects {
+      justify-content: center;
+   }
+
    .our-projects__row {
       margin-top: 5%;
    }
@@ -606,6 +611,10 @@ h1 {
 
    .our-tasks__text {
       font-size: calc(16px + (6 + 6 * 0.7) * ((100vw - 320px) / 1440));
+   }
+
+   .our-projects {
+      justify-content: center;
    }
 
    .our-projects__row {
