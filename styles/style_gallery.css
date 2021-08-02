@@ -31,13 +31,14 @@ h1 {
    grid-template-rows: repeat(auto-fit, 2fr);
    grid-gap: 15px;
    width: 80vw;
+   margin: 0 auto;
 }
 
 /*добавила эти значения к твоему классу чтобы кнопки стояли где нужно, не съезжали к краю.(и заголовок, кстати, тоже починился)*/
 .gallery__article {
    display: grid;
    justify-content: center;
-   margin-top: 10vw;
+   margin-top: 5vh;
 }
 
 .gallery__img {

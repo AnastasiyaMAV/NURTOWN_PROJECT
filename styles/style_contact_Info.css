@@ -4,6 +4,15 @@ body {
     font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
 }
 
+.main {
+    width: 100%;
+}
+
+.section {
+    width: 80vw;
+    margin: 10px auto;
+}
+
 .border_style {
     border-radius: 0px;
 }

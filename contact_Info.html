@@ -12,129 +12,149 @@
     <link rel="shortcut icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="styles/style_fonts.css">
     <link rel="stylesheet" href="styles/style_contact_Info.css">
-    
+
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
-        <div class="header__nav">
-            <div class="header__boss"><a href="index.html">ГЛАВНАЯ</a></div>
-            <div class="header__gallery"><a href="gallery.html">ГАЛЕРЕЯ</a></div>
-            <div class="header__projects"><a href="projects.html">ПРОЕКТЫ</a></div>
-            <div class="header__sertificates"><a href="certificates.html">СЕРТИФИКАТЫ</a></div>
-            <div class="header__contacts"><a href="contact_Info.html"><hr>КОНТАКТЫ<hr></a></div>
-        </div>
-    </header>
-
-    <header class="header-max768">
-        <div class="collapse text-right text-decoration-none" id="navbarToggleExternalContent">
-            <div class="p-4" style="background-color: #414141;">
-                <ul class="header__link-max768 list-unstyled">
-                    <li class="text-muted"><a href="index.html">ГЛАВНАЯ</a></li>
-                    <li class="text-muted"><a href="gallery.html">ГАЛЕРЕЯ</a></li>
-                    <li class="text-muted"><a href="projects.html">ПРОЕКТЫ</a></li>
-                    <li class="text-muted"><a href="certificates.html">СЕРТИФИКАТЫ</a></li>
-                    <li class="text-muted"><a href="contact_Info.html">КОНТАКТЫ</a></li>
-                </ul>
-            </div>
-        </div>
-        <nav class="navbar navbar-dark" style="background-color: #414141;">
-            <div class="header__logo-max768"><a href="index.html"><img src="images/logo-footer.png" alt="logo" width="90"></a></div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" 
-                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </nav>
-    </header>
-
-    <article class="content__grid">
-        <div class="jumbotron bg-white">
-            <h1>КОНТАКТНАЯ<br><span class="bold">ИНФОРМАЦИЯ</span></h1>
-            <span class="lead content__style_3">«Digital Project»</span>
-            <p class="content__style_4">г. Караганда, ул. Телевизионная 10</p>
-            <p class="content__style_3">+7 (701) 77 76 811</p>
-            <p class="content__style_4">Galym.sultanov@mail.ru</p>
-            <p class="lead">
-                <a href="#" class="btn btn-secondary btn-lg border_style content__style_5" role="button"
-                aria-pressed="true" data-toggle="modal" data-target="#exampleModal">ОБРАТНАЯ СВЯЗЬ</a>
-            </p>
-        </div> 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" 
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title content__style_6" id="exampleModalLabel">Задать вопрос</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <input type="text" class="form-control bg-light border_style" placeholder="Имя">
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" class="form-control bg-light border_style"
-                                    placeholder="Номер телефона*">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control bg-light border_style"
-                                    placeholder="E-mail*">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control bg-light border_style"
-                                    placeholder="Интересующий товар/услуга">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control bg-light border_style" rows="3"
-                                    placeholder="Сообщение*"></textarea>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Отправляя заявку Вы соглашаетесь с политикой
-                                    конфиденциальности</label>
-                            </div>
-                            <div class="content__grid__btn-row"><div class="content__grid__btn"><a href="#" 
-                                class="btn btn-secondary btn-lg btn-block border_style content__style_5" role="button"
-                                aria-pressed="true" data-toggle="modal" data-target="#exampleModalCenter">ОТПРАВИТЬ</a>
-                            </div>
-                            </div>                            
-                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="images/contact_info/success.png" class="rounded mx-auto d-block" alt="image">
-                                            <h5 class="text-center content__style_6" id="exampleModalCenterTitle">Спасибо!</h5>
-                                            <p class="text-center">Ваше сообщение отправлено. </p>
-                                            <p class="text-center">Мы свяжемся с вами в ближайшее время</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <a href="#" class="btn btn-secondary btn-lg btn-block border_style content__style_5"
-                                            role="button" aria-pressed="true"  data-dismiss="modal"> ВЕРНУТЬСЯ НАЗАД</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                                
-                        </form>                            
-                    </div>                        
+    <main class="main">
+        <header class="header">
+            <div class="header__body">
+                <div class="header__logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+                <div class="header__nav">
+                    <div class="header__boss"><a href="index.html">ГЛАВНАЯ</a></div>
+                    <div class="header__gallery"><a href="gallery.html">ГАЛЕРЕЯ</a></div>
+                    <div class="header__projects"><a href="projects.html">ПРОЕКТЫ</a></div>
+                    <div class="header__sertificates"><a href="certificates.html">СЕРТИФИКАТЫ</a></div>
+                    <div class="header__contacts"><a href="contact_Info.html">
+                            <hr>КОНТАКТЫ
+                            <hr></a></div>
                 </div>
             </div>
+        </header>
+
+        <header class="header-max768">
+            <div class="collapse text-right text-decoration-none" id="navbarToggleExternalContent">
+                <div class="p-4" style="background-color: #414141;">
+                    <ul class="header__link-max768 list-unstyled">
+                        <li class="text-muted"><a href="index.html">ГЛАВНАЯ</a></li>
+                        <li class="text-muted"><a href="gallery.html">ГАЛЕРЕЯ</a></li>
+                        <li class="text-muted"><a href="projects.html">ПРОЕКТЫ</a></li>
+                        <li class="text-muted"><a href="certificates.html">СЕРТИФИКАТЫ</a></li>
+                        <li class="text-muted"><a href="contact_Info.html">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark" style="background-color: #414141;">
+                <div class="header__logo-max768"><a href="index.html"><img src="images/logo-footer.png" alt="logo"
+                            width="90"></a></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </header>
+        <div class="section">
+            <article class="content__grid">
+                <div class="jumbotron bg-white">
+                    <h1>КОНТАКТНАЯ<br><span class="bold">ИНФОРМАЦИЯ</span></h1>
+                    <span class="lead content__style_3">«Digital Project»</span>
+                    <p class="content__style_4">г. Караганда, ул. Телевизионная 10</p>
+                    <p class="content__style_3">+7 (701) 77 76 811</p>
+                    <p class="content__style_4">Galym.sultanov@mail.ru</p>
+                    <p class="lead">
+                        <a href="#" class="btn btn-secondary btn-lg border_style content__style_5" role="button"
+                            aria-pressed="true" data-toggle="modal" data-target="#exampleModal">ОБРАТНАЯ СВЯЗЬ</a>
+                    </p>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title content__style_6" id="exampleModalLabel">Задать вопрос</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control bg-light border_style" placeholder="Имя">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control bg-light border_style"
+                                            placeholder="Номер телефона*">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control bg-light border_style"
+                                            placeholder="E-mail*">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control bg-light border_style"
+                                            placeholder="Интересующий товар/услуга">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control bg-light border_style" rows="3"
+                                            placeholder="Сообщение*"></textarea>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Отправляя заявку Вы
+                                            соглашаетесь с политикой
+                                            конфиденциальности</label>
+                                    </div>
+                                    <div class="content__grid__btn-row">
+                                        <div class="content__grid__btn"><a href="#"
+                                                class="btn btn-secondary btn-lg btn-block border_style content__style_5"
+                                                role="button" aria-pressed="true" data-toggle="modal"
+                                                data-target="#exampleModalCenter">ОТПРАВИТЬ</a>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img src="images/contact_info/success.png"
+                                                        class="rounded mx-auto d-block" alt="image">
+                                                    <h5 class="text-center content__style_6"
+                                                        id="exampleModalCenterTitle">
+                                                        Спасибо!</h5>
+                                                    <p class="text-center">Ваше сообщение отправлено. </p>
+                                                    <p class="text-center">Мы свяжемся с вами в ближайшее время</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a href="#"
+                                                        class="btn btn-secondary btn-lg btn-block border_style content__style_5"
+                                                        role="button" aria-pressed="true" data-dismiss="modal">
+                                                        ВЕРНУТЬСЯ НАЗАД</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d643.4961470227933!2d73.08505512920013!3d49.823954863910274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424346c3b32ffcaf%3A0x41481e634d919f9e!2z0YPQuy4g0KLQtdC70LXQstC40LfQuNC-0L3QvdCw0Y8gMTAsINCa0LDRgNCw0LPQsNC90LTQsCAxMDAwMDAsINCa0LDQt9Cw0YXRgdGC0LDQvQ!5e0!3m2!1sru!2sru!4v1626989037325!5m2!1sru!2sru"
+                    class="map_style" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </article>
         </div>
-    
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d643.4961470227933!2d73.08505512920013!3d49.823954863910274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424346c3b32ffcaf%3A0x41481e634d919f9e!2z0YPQuy4g0KLQtdC70LXQstC40LfQuNC-0L3QvdCw0Y8gMTAsINCa0LDRgNCw0LPQsNC90LTQsCAxMDAwMDAsINCa0LDQt9Cw0YXRgdGC0LDQvQ!5e0!3m2!1sru!2sru!4v1626989037325!5m2!1sru!2sru"
-            class="map_style" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
-    </article>  
-        
+    </main>
     <footer class="footer">
         <div class="footer__top">
-            <div class="footer__logo"><a href="index.html"><img src="images/logo-footer.png" alt="logo-footer"></a></div>
+            <div class="footer__logo"><a href="index.html"><img src="images/logo-footer.png" alt="logo-footer"></a>
+            </div>
             <div class="footer__information">
                 <span class="title1">Информация</span>
                 <a href="index.html" class="footer__boss link">Главная</a>
@@ -145,8 +165,9 @@
             </div>
             <div class="footer__contacts">
                 <span class="title2">Контакты</span>
-                <div class="footer__location"><p><img src="images/geoloc.png" alt="geoloc">
-                    &nbsp;&nbsp;&nbsp;100000, Республика Казахстан,<br> г. Караганда, ул. Телевизионная 10</p>
+                <div class="footer__location">
+                    <p><img src="images/geoloc.png" alt="geoloc">
+                        &nbsp;&nbsp;&nbsp;100000, Республика Казахстан,<br> г. Караганда, ул. Телевизионная 10</p>
                 </div>
                 <div class="footer__phone"><img src="images/phone.png" alt="phone">
                     <span>&nbsp;&nbsp;&nbsp;+7 (701) 77 76 811</span></div>
@@ -155,9 +176,10 @@
             </div>
             <div class="footer__contacts-min361px">
                 <span class="title2-min361px">Контакты</span>
-                <div class="footer__phone-min361px"><a href="tel:+77017776811" class="btn btn-min361px"><img src="images/phone.png" alt="phone"></a></div>
-                <div class="footer__mail-min361px"><a href="mailto:Galym.sultanov@mail.ru" class="btn btn-min361px"><img src="images/mail.png"
-                    alt="mail"></a></div>
+                <div class="footer__phone-min361px"><a href="tel:+77017776811" class="btn btn-min361px"><img
+                            src="images/phone.png" alt="phone"></a></div>
+                <div class="footer__mail-min361px"><a href="mailto:Galym.sultanov@mail.ru" class="btn btn-min361px"><img
+                            src="images/mail.png" alt="mail"></a></div>
             </div>
             <div class="footer__social">
                 <div><span class="title3">Социальные сети</span></div>
@@ -175,7 +197,7 @@
         </div>
         <div class="footer__bottom-min361px">
             <span class="footer__copyright">Digital Project&copy;2019</span>
-        </div> 
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -186,4 +208,5 @@
     </script>
 
 </body>
+
 </html>

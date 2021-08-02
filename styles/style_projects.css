@@ -4,22 +4,26 @@ body {
     font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
 }
 
+.main {
+    width: 100%;
+}
+
+.section {
+    width: 80vw;
+    margin: 10px auto;
+}
+
 h1 {
     font-weight: 300;
     font-style: normal;
     font-size: calc(45px + 19 * (100vw / 1440));
     color: #BDBDBD;
+    margin-top: 5vh;
 }
 
 .bold {
     font-weight: bold;
     color: black;
-}
-
-
-.content {
-    width: 90vw;
-    margin: 20px auto;
 }
 
 .school__row {

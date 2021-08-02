@@ -4,11 +4,15 @@ body {
    font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
 }
 
+.section {
+   width: 80vw;
+   margin: 10px auto;
+}
+
 .certificates {
    display: flex;
    justify-content: center;
-   width: 100%;
-   margin-top: 100px;
+   margin-top: 5vh;
 }
 
 h1 {
@@ -25,15 +29,15 @@ h1 {
 
 .certificates__row {
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    width: 80vw;
-   margin: 90px 0;
+   margin: 5vh auto;
 }
 
 .pagination {
    display: flex;
    justify-content: flex-end;
-   margin: 8% 0px;
+   margin: 5% 0px;
 }
 
 .pagination__arrows {

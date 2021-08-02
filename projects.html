@@ -14,16 +14,19 @@
 </head>
 
 <body>
+    <main class="main">
     <header class="header">
-        <div class="header__logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
-        <div class="header__nav">
-            <div class="header__boss"><a href="index.html">ГЛАВНАЯ</a></div>
-            <div class="header__gallery"><a href="gallery.html">ГАЛЕРЕЯ</a></div>
-            <div class="header__projects"><a href="projects.html">
-                    <hr>ПРОЕКТЫ
-                    <hr></a></div>
-            <div class="header__sertificates"><a href="certificates.html">СЕРТИФИКАТЫ</a></div>
-            <div class="header__contacts"><a href="contact_Info.html">КОНТАКТЫ</a></div>
+        <div class="header__body">
+            <div class="header__logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+            <div class="header__nav">
+                <div class="header__boss"><a href="index.html">ГЛАВНАЯ</a></div>
+                <div class="header__gallery"><a href="gallery.html">ГАЛЕРЕЯ</a></div>
+                <div class="header__projects"><a href="projects.html">
+                        <hr>ПРОЕКТЫ
+                        <hr></a></div>
+                <div class="header__sertificates"><a href="certificates.html">СЕРТИФИКАТЫ</a></div>
+                <div class="header__contacts"><a href="contact_Info.html">КОНТАКТЫ</a></div>
+            </div>
         </div>
     </header>
 
@@ -40,7 +43,8 @@
             </div>
         </div>
         <nav class="navbar navbar-dark" style="background-color: #414141;">
-            <div class="header__logo-max768"><a href="index.html"><img src="images/logo-footer.png" alt="logo" width="90"></a></div>
+            <div class="header__logo-max768"><a href="index.html"><img src="images/logo-footer.png" alt="logo"
+                        width="90"></a></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -49,97 +53,92 @@
         </nav>
     </header>
 
-    <main>
-        <!-- Сделала обертку чтобы ширину блока сделать 90vw по отношению к body и main, которые 100vw.
-            Четко разделила все внутри row на самостоятельные блоки. первая колонка как у тебя и было - картинка.
-            Вторая колонка див school__txt с заголовком h4 и текстом и див button с кнопкой, чтобы адаптивность текста не влияла на кнопку.
-        Дала заголовку класс чтобы ставить его посередине в мелких размерах.-->
-        <div class="content">
-            <div class="content__title">
-                <h1>НАШИ<br><span class="bold">ПРОЕКТЫ</span></h1>
+    <section class="section">
+        <div class="content__title">
+            <h1>НАШИ<br><span class="bold">ПРОЕКТЫ</span></h1>
+        </div>
+        <article class="school">
+            <div class="school__row">
+                <div class="school__col_first">
+                    <img class="school__img" src="images/projects/school.svg" alt="school">
+                </div>
+                <div class="school__col_second">
+                    <div class="school__txt">
+                        <h4>Общеобразовательная школа</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+                            aliquam
+                            similique sunt facilis provident tenetur nobis asperiores, esse cum. Libero voluptates
+                            quidem nostrum quisquam! Hic eum doloremque accusantium facilis qui.</p>
+                    </div>
+                    <div class="button"><a href="#" class="school__button white-button btn btn-light" role="button"
+                            aria-pressed="true">Смотреть
+                            <img src="images/arrow_lookat.svg" alt="arrow">
+                        </a></div>
+                </div>
             </div>
-            <article class="school">
-                <div class="school__row">
-                    <div class="school__col_first">
-                        <img class="school__img" src="images/projects/school.svg" alt="school">
-                    </div>
-                    <div class="school__col_second">
-                        <div class="school__txt">
-                            <h4>Общеобразовательная школа</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
-                                aliquam
-                                similique sunt facilis provident tenetur nobis asperiores, esse cum. Libero voluptates
-                                quidem nostrum quisquam! Hic eum doloremque accusantium facilis qui.</p>
-                        </div>
-                        <div class="button"><a href="#" class="school__button white-button btn btn-light" role="button"
-                                aria-pressed="true">Смотреть
-                                <img src="images/arrow_lookat.svg" alt="arrow">
-                            </a></div>
-                    </div>
+        </article>
+        <article class="parking">
+            <div class="parking__row">
+                <div class="parking__col_first">
+                    <img class="parking__img" src="images/projects/parking.svg" alt="parking">
                 </div>
-            </article>
-            <article class="parking">
-                <div class="parking__row">
-                    <div class="parking__col_first">
-                        <img class="parking__img" src="images/projects/parking.svg" alt="parking">
+                <div class="parking__col_second">
+                    <div class="parking__txt">
+                        <h4>Паркинг на 500 автомобилей</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+                            aliquam
+                            similique sunt facilis provident tenetur nobis asperiores, esse cum. Libero voluptates
+                            quidem nostrum quisquam! Hic eum doloremque accusantium facilis qui.</p>
                     </div>
-                    <div class="parking__col_second">
-                        <div class="parking__txt">
-                            <h4>Паркинг на 500 автомобилей</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
-                                aliquam
-                                similique sunt facilis provident tenetur nobis asperiores, esse cum. Libero voluptates
-                                quidem nostrum quisquam! Hic eum doloremque accusantium facilis qui.</p>
-                        </div>
-                        <div class="button"><a href="parking.html" class="parking__button white-button btn btn-light"
-                                role="button" aria-pressed="true">Смотреть
-                                <img src="images/arrow_lookat.svg" alt="arrow">
-                            </a></div>
-                    </div>
+                    <div class="button"><a href="parking.html" class="parking__button white-button btn btn-light"
+                            role="button" aria-pressed="true">Смотреть
+                            <img src="images/arrow_lookat.svg" alt="arrow">
+                        </a></div>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <article class="office">
-                <div class="office__row">
-                    <div class="office__col_first">
-                        <img class="office__img" src="images/projects/office.svg" alt="office">
-                    </div>
-                    <div class="office__col_second">
+        <article class="office">
+            <div class="office__row">
+                <div class="office__col_first">
+                    <img class="office__img" src="images/projects/office.svg" alt="office">
+                </div>
+                <div class="office__col_second">
 
-                        <div class="office__txt">
-                            <h4>Проект интерьера офиса</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
-                                aliquam
-                                similique sunt facilis provident tenetur nobis asperiores, esse cum. Libero voluptates
-                                quidem nostrum quisquam! Hic eum doloremque accusantium facilis qui.</p>
-                        </div>
-                        <div class="button"><a href="#" class="office__button white-button btn btn-light" role="button"
-                                aria-pressed="true">Смотреть
-                                <img src="images/arrow_lookat.svg" alt="arrow">
-                            </a></div>
+                    <div class="office__txt">
+                        <h4>Проект интерьера офиса</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+                            aliquam
+                            similique sunt facilis provident tenetur nobis asperiores, esse cum. Libero voluptates
+                            quidem nostrum quisquam! Hic eum doloremque accusantium facilis qui.</p>
                     </div>
+                    <div class="button"><a href="#" class="office__button white-button btn btn-light" role="button"
+                            aria-pressed="true">Смотреть
+                            <img src="images/arrow_lookat.svg" alt="arrow">
+                        </a></div>
                 </div>
-            </article>
-            <div class="pagination">
-                <div class="pagination__body">
-                    <div class="pagination__pages"><button class="start-page">03</button><img src="images/slash.png" alt="slash"><button
-                            class="end-page">05</button></div>
-                </div>
-                <div class="pagination__arrows">
-                    <form action="gallery.html" target="_blank">
-                        <button class="left-arrow"><img src="images/arrow-2-left-long.svg" alt=""></button>
-                    </form>
-                    <form action="certificates.html" target="_blank">
-                        <button class="right-arrow"><img src="images/arrow-2-right-long.svg" alt=""></button>
-                    </form>
-                </div>
+            </div>
+        </article>
+        <div class="pagination">
+            <div class="pagination__body">
+                <div class="pagination__pages"><button class="start-page">03</button><img src="images/slash.png"
+                        alt="slash"><button class="end-page">05</button></div>
+            </div>
+            <div class="pagination__arrows">
+                <form action="gallery.html" target="_blank">
+                    <button class="left-arrow"><img src="images/arrow-2-left-long.svg" alt=""></button>
+                </form>
+                <form action="certificates.html" target="_blank">
+                    <button class="right-arrow"><img src="images/arrow-2-right-long.svg" alt=""></button>
+                </form>
             </div>
         </div>
-    </main>
-
+    </section>
+</main>
     <footer class="footer">
         <div class="footer__top">
-            <div class="footer__logo"><a href="index.html"><img src="images/logo-footer.png" alt="logo-footer"></a></div>
+            <div class="footer__logo"><a href="index.html"><img src="images/logo-footer.png" alt="logo-footer"></a>
+            </div>
             <div class="footer__information">
                 <span class="title1">Информация</span>
                 <a href="index.html" class="footer__boss link">Главная</a>
