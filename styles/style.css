@@ -299,16 +299,14 @@ h1 {
       font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
    }
 
-
-
    .header {
       display: none;
    }
 
    .pagination-main {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: center;
       margin-bottom: 8%;
    }
 
