@@ -253,7 +253,7 @@ h1 {
 .centered>h4 {
    font-weight: bold;
    font-style: normal;
-   font-size: calc(35px + 29 * (100vw / 1440));
+   font-size: calc(20px + 19 * (100vw / 1440));
 }
 
 .our-projects__bottom {
@@ -291,7 +291,7 @@ h1 {
 
 @media screen and (max-width: 360px) {
    h2 {
-      font-size: calc(40px + (24 + 24 * 0.7) * ((100vw - 320px) / 1440));
+      font-size: calc(35px + (24 + 24 * 0.7) * ((100vw - 320px) / 1440));
       text-align: center;
    }
 
@@ -396,9 +396,11 @@ h1 {
       margin-top: 5%;
    }
 
-   h4 {
+   /*h4 {
       font-size: calc(35px + (29 + 29 * 0.7) * ((100vw - 320px) / 1440));
-   }
+   }*/
+
+
 
    .content-image__contact {
       display: none;
@@ -610,9 +612,9 @@ h1 {
       margin-top: 5%;
    }
 
-   h4 {
+   /*h4 {
       font-size: calc(35px + (29 + 29 * 0.7) * ((100vw - 320px) / 1440));
-   }
+   }*/
 
    .content-image__contact {
       display: none;
@@ -800,9 +802,9 @@ h1 {
       font-size: calc(120px + (80 + 80 * 0.7) * ((100vw - 320px) / 1440));
    }
 
-   h4 {
+   /*h4 {
       font-size: calc(35px + (29 + 29 * 0.7) * ((100vw - 320px) / 1440));
-   }
+   }*/
 
    .our-tasks__text {
       font-size: calc(16px + (6 + 6 * 0.7) * ((100vw - 320px) / 1440));
@@ -952,9 +954,9 @@ h1 {
       margin-top: 5%;
    }
 
-   h4 {
+   /*h4 {
       font-size: calc(35px + (29 + 29 * 0.7) * ((100vw - 320px) / 1440));
-   }
+   }*/
 
    .content-image__contact {
       max-width: 45%;
