@@ -185,7 +185,8 @@ h4 {
     }
 
     h1 {
-        font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
+        /*font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));*/
+        font-size: 10vw;
     }
 
     h4 {
@@ -268,8 +269,13 @@ h4 {
         padding: 10%;
     }
 
+    a>img {
+        display: none;
+    }
+
     h1 {
-        font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
+        /*font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));*/
+        font-size: 10vw;
     }
 
     h4 {
