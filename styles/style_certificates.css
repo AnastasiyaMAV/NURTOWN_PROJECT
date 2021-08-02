@@ -4,15 +4,16 @@ body {
    font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
 }
 
-.section {
+.certificates {
+   display: flex;
+   margin-top: 5vh;
    width: 80vw;
    margin: 10px auto;
 }
 
-.certificates {
-   display: flex;
-   justify-content: center;
-   margin-top: 5vh;
+.certificates__body {
+   margin: 0 auto;
+   width: 100%;
 }
 
 h1 {
@@ -29,21 +30,21 @@ h1 {
 
 .certificates__row {
    display: flex;
-   justify-content: space-between;
-   width: 80vw;
+   justify-content: space-around;
    margin: 5vh auto;
 }
 
 .pagination {
    display: flex;
    justify-content: flex-end;
+   align-items: baseline;
    margin: 5% 0px;
 }
 
 .pagination__arrows {
    display: flex;
    justify-content: flex-end;
-   margin-bottom: 8%;
+   margin-bottom: 4%;
 }
 
 .start-page,
@@ -374,6 +375,11 @@ h1 {
 @media screen and (min-width: 1024px) {
    .header-max768 {
       display: none;
+   }
+
+   .certificates__image img {
+      max-width: 300px;
+      width: 100%;
    }
 
    .footer__contacts-min361px {
