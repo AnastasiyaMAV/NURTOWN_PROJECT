@@ -47,9 +47,7 @@ h1 {
    }
 
    .parking__text {
-
       font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
-
    }
 
    .parking__content {
@@ -76,15 +74,12 @@ h1 {
 
    .parking__item--3 {
       grid-area: three;
-
    }
 
    .parking__item--4 {
       grid-area: four;
       width: 80vw;
    }
-
-
 
    .footer {
       display: none;
@@ -103,9 +98,7 @@ h1 {
    }
 
    .parking__text {
-
       font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
-
    }
 
    .parking__content {
@@ -132,14 +125,12 @@ h1 {
 
    .parking__item--3 {
       grid-area: three;
-
    }
 
    .parking__item--4 {
       grid-area: four;
       width: 80vw;
    }
-
 
    .footer {
       display: none;
@@ -184,7 +175,6 @@ h1 {
 
    .parking__item--3 {
       grid-area: three;
-
    }
 
    .parking__item--4 {
@@ -289,9 +279,7 @@ h1 {
    }
 
    .parking__text {
-
       font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
-
    }
 
    .parking__content {
@@ -327,7 +315,6 @@ h1 {
       grid-area: four;
    }
 
-
    .footer__contacts-min361px {
       display: none;
    }
@@ -354,7 +341,6 @@ h1 {
 }
 
 @media screen and (min-width: 1024px) {
-
    .parking__title {
       margin-top: 5%;
    }
