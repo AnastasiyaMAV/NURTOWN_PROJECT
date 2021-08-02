@@ -285,38 +285,41 @@ h4 {
     .school__row {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 55% 45%;
+        grid-template-rows: 0.6fr 0.5fr;
         grid-template-areas: "school__col_first"
             "school__col_second";
         margin-bottom: 10%;
+
     }
 
     .school__col_second {
-        align-content: center;
+        align-self: center;
     }
+
+
 
     .parking__row {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 55% 45%;
+        grid-template-rows: 0.8fr 0.5fr;
         grid-template-areas: "parking__col_first""parking__col_second";
         margin-bottom: 10%;
     }
 
     .parking__col_second {
-        align-content: center;
+        align-self: center;
     }
 
     .office__row {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 55% 45%;
+        grid-template-rows: 0.8fr 0.5fr;
         grid-template-areas: "office__col_first""office__col_second";
         margin-bottom: 10%;
     }
 
     .office__col_second {
-        align-content: center;
+        align-self: center;
     }
 
     .content-image__contact {
@@ -362,6 +365,10 @@ h4 {
         margin-bottom: 10%;
     }
 
+    .school__col_second {
+        align-self: center;
+    }
+
     .parking__row {
         display: grid;
         grid-template-columns: 1fr;
@@ -370,12 +377,20 @@ h4 {
         margin-bottom: 10%;
     }
 
+    .parking__col_second {
+        align-self: center;
+    }
+
     .office__row {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 58% 42%;
         grid-template-areas: "office__col_first""office__col_second";
         margin-bottom: 10%;
+    }
+
+    .office__col_second {
+        align-self: center;
     }
 
     .content-image__contact {
