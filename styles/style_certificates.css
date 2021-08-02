@@ -87,7 +87,7 @@ h1 {
 
    .certificates__row {
       flex-direction: column;
-      width: 100vw;
+      width: 100%;
    }
 
    .certificates__body {
@@ -95,7 +95,7 @@ h1 {
    }
 
    .certificates__image img {
-      max-width: 337px;
+      max-width: 330px;
       width: 100%;
    }
 
@@ -109,7 +109,6 @@ h1 {
    .footer {
       display: none;
    }
-
 }
 
 @media screen and (min-width: 361px) and (max-width: 499px) {
