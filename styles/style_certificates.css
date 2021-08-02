@@ -65,7 +65,7 @@ h1 {
 .right-arrow {
    border: 1px solid #F2F2F2;
    background-color: transparent;
-   margin-left: 20px;
+   margin: 10px;
 }
 
 .left-arrow:hover,
@@ -93,9 +93,16 @@ h1 {
       text-align: center;
    }
 
+   .certificates__image img {
+      max-width: 337px;
+      width: 100%;
+   }
+
    .pagination {
       display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
    }
 
    .footer {
