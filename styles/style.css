@@ -53,13 +53,13 @@ h1 {
 .pagination-main {
    display: flex;
    flex-direction: column;
-   margin: 8% 0px;
+   margin: 4% 0px;
 }
 
 .pagination-main__arrows {
    display: flex;
    justify-content: flex-start;
-   margin-bottom: 8%;
+   margin-bottom: 4%;
 }
 
 .start-page,
@@ -81,7 +81,7 @@ h1 {
 .right-arrow {
    border: 1px solid #F2F2F2;
    background-color: transparent;
-   margin-left: 20px;
+   margin: 10px;
 }
 
 .left-arrow:hover,
@@ -307,7 +307,8 @@ h1 {
    .pagination-main {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      align-items: center;
+      text-align: center;
       margin-bottom: 8%;
    }
 
@@ -322,6 +323,7 @@ h1 {
       grid-area: introduction__txt;
       display: grid;
       justify-content: center;
+      text-align: center;
    }
 
    .carousel-inner {
