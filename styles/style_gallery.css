@@ -135,20 +135,9 @@ h1 {
 
    .pagination {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
    }
-
-
-   /*.gallery__list {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(10, 1fr);
-      align-items: start;
-      width: 80vw;
-      grid-gap: 15px;
-      margin: 10% auto;
-   }*/
-
 
    .tooltip {
       display: none;
