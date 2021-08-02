@@ -230,9 +230,9 @@ h4 {
         align-content: center;
     }
 
-    a>img {
+    /*a>img {
         display: none;
-    }
+    }*/
 
     .content-image__contact {
         display: none;
@@ -260,18 +260,16 @@ h4 {
     }
 
     .about__txt {
-
         font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
-
     }
 
     .button {
         padding: 10%;
     }
 
-    a>img {
+    /*a>img {
         display: none;
-    }
+    }*/
 
     h1 {
         /*font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));*/
