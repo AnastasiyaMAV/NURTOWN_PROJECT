@@ -34,11 +34,11 @@ h1 {
         display: none;
     }
 
-    .content__grid {
+    .сontact-inform__grid {
         display: grid;
-        grid-area: content__grid;
+        grid-area: сontact-inform__grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 40%;
         justify-items: center;
         align-items: center;
     }
@@ -50,44 +50,37 @@ h1 {
         color: #BDBDBD;
     }
 
-    .content__style_3 {
+    .сontact-inform__title1 {
         font-weight: 700;
         font-style: normal;
         font-size: 5vw;
         color: #333333;
     }
 
-    .content__style_4 {
+    .сontact-inform__title2 {
         font-weight: 300;
         font-style: normal;
         font-size: 5vw;
         color: #333333;
     }
 
-    .content__style_5 {
+    .сontact-inform__title3 {
         font-weight: 400;
         font-style: normal;
         font-size: 5vw;
         color: #FFFFFF;
     }
 
-    .content__style_6 {
+    .сontact-inform__title4 {
         font-weight: bold;
         font-style: normal;
         font-size: 5vw;
         color: #333333;
     }
 
-    .content__style_7 {
-        font-weight: 700;
-        font-style: normal;
-        color: #333333;
-    }
-
     .map_style {
         width: 70%;
-        height: 50%;
-        margin-bottom: 10vw;
+        height: 60%;
     }
 
     .footer {
@@ -97,9 +90,9 @@ h1 {
 }
 
 @media screen and (min-width: 361px) and (max-width: 499px) {
-    .content__grid {
+    .сontact-inform__grid {
         display: grid;
-        grid-area: content__grid;
+        grid-area: сontact-inform__grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 0.5fr;
         justify-items: center;
@@ -114,37 +107,31 @@ h1 {
         font-size: 10vw;
     }
 
-    .content__style_3 {
+    .сontact-inform__title1 {
         font-weight: 700;
         font-style: normal;
         font-size: 5vw;
         color: #333333;
     }
 
-    .content__style_4 {
+    .сontact-inform__title2 {
         font-weight: 300;
         font-style: normal;
         font-size: 5vw;
         color: #333333;
     }
 
-    .content__style_5 {
+    .сontact-inform__title3 {
         font-weight: 400;
         font-style: normal;
         font-size: 5vw;
         color: #FFFFFF;
     }
 
-    .content__style_6 {
+    .сontact-inform__title4 {
         font-weight: bold;
         font-style: normal;
         font-size: 5vw;
-        color: #333333;
-    }
-
-    .content__style_7 {
-        font-weight: 700;
-        font-style: normal;
         color: #333333;
     }
 
@@ -159,9 +146,9 @@ h1 {
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
-    .content__grid {
+    .сontact-inform__grid {
         display: grid;
-        grid-area: content__grid;
+        grid-area: сontact-inform__grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
@@ -176,37 +163,31 @@ h1 {
         font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
     }
 
-    .content__style_3 {
+    .сontact-inform__title1 {
         font-weight: 700;
         font-style: normal;
         font-size: 5vw;
         color: #333333;
     }
 
-    .content__style_4 {
+    .сontact-inform__title2 {
         font-weight: 300;
         font-style: normal;
         font-size: 5vw;
         color: #333333;
     }
 
-    .content__style_5 {
+    .сontact-inform__title3 {
         font-weight: 400;
         font-style: normal;
         font-size: 5vw;
         color: #FFFFFF;
     }
 
-    .content__style_6 {
+    .сontact-inform__title4 {
         font-weight: bold;
         font-style: normal;
         font-size: 5vw;
-        color: #333333;
-    }
-
-    .content__style_7 {
-        font-weight: 700;
-        font-style: normal;
         color: #333333;
     }
 
@@ -298,9 +279,9 @@ h1 {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-    .content__grid {
+    .сontact-inform__grid {
         display: grid;
-        grid-area: content__grid;
+        grid-area: сontact-inform__grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         justify-items: center;
@@ -315,39 +296,34 @@ h1 {
         font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
     }
 
-    .content__style_3 {
+    .сontact-inform__title1 {
         font-weight: 700;
         font-style: normal;
         font-size: 2vw;
         color: #333333;
     }
 
-    .content__style_4 {
+    .сontact-inform__title2 {
         font-weight: 300;
         font-style: normal;
         font-size: 2vw;
         color: #333333;
     }
 
-    .content__style_5 {
+    .сontact-inform__title3 {
         font-weight: 400;
         font-size: 2vw;
         font-style: normal;
         color: #FFFFFF;
     }
 
-    .content__style_6 {
+    .сontact-inform__title4 {
         font-weight: bold;
         font-style: normal;
         font-size: 2vw;
         color: #333333;
     }
 
-    .content__style_7 {
-        font-weight: 700;
-        font-style: normal;
-        color: #333333;
-    }
 
     .map_style {
         width: 70%;
@@ -380,9 +356,9 @@ h1 {
 }
 
 @media screen and (min-width: 1024px) {
-    .content__grid {
+    .сontact-inform__grid {
         display: grid;
-        grid-area: content__grid;
+        grid-area: сontact-inform__grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         justify-items: center;
@@ -393,19 +369,19 @@ h1 {
         display: none;
     }
 
-    .content__style_3 {
+    .сontact-inform__title1 {
         font-weight: bold;
         font-style: normal;
         font-size: 18px;
     }
 
-    .content__style_4 {
+    .сontact-inform__title2 {
         font-weight: 300;
         font-style: normal;
         font-size: 16px;
     }
 
-    .content__style_5 {
+    .сontact-inform__title3 {
         font-weight: normal;
         font-style: normal;
         font-size: 12px;
