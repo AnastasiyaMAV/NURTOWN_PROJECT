@@ -44,41 +44,39 @@ h1 {
 /*начало кода кнопок*/
 .pagination {
    display: flex;
-   justify-content: flex-start;
-   margin-bottom: 130px;
+   margin: 8% 0px;
 }
 
-.pagination__body {
+.pagination__arrows {
    display: flex;
-   justify-content: space-between;
+   justify-content: flex-end;
+   margin-bottom: 8%;
 }
 
-.arrows {
-   display: flex;
-   justify-content: flex-start;
-}
-
-.start,
-.end,
-.left,
-.right {
+.start-page,
+.end-page,
+.left-arrow,
+.right-arrow {
    height: 53px;
    width: 53px;
    border: 0px;
    background-color: transparent;
 }
 
-.end {
+.end-page:hover,
+.start-page:hover {
    color: #BDBDBD;
 }
 
-.left,
-.right {
+.left-arrow,
+.right-arrow {
    border: 1px solid #F2F2F2;
    background-color: transparent;
+   margin-left: 20px;
 }
 
-.right {
+.left-arrow:hover,
+.right-arrow:hover {
    background-color: #F9F9F9;
 }
 
@@ -126,7 +124,7 @@ h1 {
    h1 {
       font-size: calc(45px + (19 + 19 * 0.7) * ((100vw - 320px) / 1440));
    }
-   
+
    .pagination {
       display: flex;
       justify-content: center;
