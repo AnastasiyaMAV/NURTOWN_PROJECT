@@ -1,29 +1,36 @@
-# NURTOWN_PROJECT
-Архитектурный сайт, первый проект.
-Исполнители: Олеся Вовк, AnastasiyaMAV, Larisa Liebner, Natali, Olga Kr.
+# Архитектурный сайт "NURTOWN_PROJECT".
 
-В общей папке проекта NURTOWN_PROJECT хранятся следующие файлы: 
-- index.html отвечает за страницу "Главная";
-- gallery.html отвечает за страницу "Галерея";
-- projects.html отвечает за страницу "Проекты";
-- certificates.html отвечает за страницу "Сертификаты";
-- contact_Info.html отвечает за страницу "Контакты";
-- parking.html отвечает за страницу "Паркинг на 500 автомобилей".
+---
 
-В общей папке проекта NURTOWN_PROJECT хранятся следующие папки:
-- fonts - папка с шрифтами всего проекта;
-- styles;
-- images.
+Включает в себя:
+1. <ins>Стартовая страница </ins>. <br>
+   1.1  _На данной странице собраны данные о компании, основные задачи_.<br>
 
-В папке styles храниться все стили данного проекта:
-- файл style_header_footer.css отвечает за стили header и footer;
-- файл style_fonts.css отвечает за шрифты;
-- файл style.css отвечает за стили страницы index.html;
-- файл style_gallery.css отвечает за стили страницы gallery.html;
-- файл style_projects.css отвечает за стили страницы projects.html;
-- файл style_certificates.css отвечает за стили страницы certificates.html;
-- файл style_contact_Info.css отвечает за стили страницы contact_Info.html;
-- файл style_parking.css отвечает за стили страницы parking.html.
+2. <ins>Страница "Профиль" </ins>. <br>
+   1.1  _Панель анимации о том, чем занимается студия.<br>
 
+3. <ins>Страница "Проекты"</ins>.<br>
+   2.1  _Панель анимации по проектам студии_.<br>
 
-В папке images храниться все изображения данного проекта.
+4. <ins>Страница "Контакты"</ins>.<br>
+   3.1  _Отображение контактов_.<br>
+
+---
+
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/AnastasiyaMAV/NURTOWN_PROJECT?color=%23ffcc00) ![GitHub top language](https://img.shields.io/github/languages/top/AnastasiyaMAV/NURTOWN_PROJECT?color=%23ffcc00) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/AnastasiyaMAV/NURTOWN_PROJECT?color=%23ffcc00) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/AnastasiyaMAV/NURTOWN_PROJECT) ![GitHub last commit](https://img.shields.io/github/last-commit/AnastasiyaMAV/NURTOWN_PROJECT?color=%23ffcc00) ![GitHub language count](https://img.shields.io/github/languages/count/AnastasiyaMAV/NURTOWN_PROJECT?color=%23ffcc00)
+
+---
+
+![gif](https://github.com/AnastasiyaMAV/NURTOWN_PROJECT/blob/main/images/NURTOWN_PROJECT.gif)
+#### Используемые технологии:
+
+- HTML
+- CSS
+
+#### Запуск:
+
+```
+git clone https://github.com/AnastasiyaMAV/NURTOWN_PROJECT.git
+cd NURTOWN_PROJECT
+Live Server: Open with Live Server
+```
